@@ -1,0 +1,29 @@
+{
+  "name": "forms-flow-ai-stylesheet",
+  "version": "1.0.0",
+  "description": "This repo contains common styles for theming the formsflow application",
+  "main": "/dist",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass --watch scss -o dist --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AOT-Technologies/forms-flow-ai-stylesheet.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "theme"
+  ],
+  "author": "Arun s",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AOT-Technologies/forms-flow-ai-stylesheet/issues"
+  },
+  "homepage": "https://github.com/AOT-Technologies/forms-flow-ai-stylesheet#readme"
+}
