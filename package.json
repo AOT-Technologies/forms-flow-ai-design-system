@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
+    "node-sass":"node-sass --watch ./src/scss -o dist --output-style compressed",
     "build-storybook": "build-storybook",
     "sass": "sass --watch ./src/scss/style.scss ./dist/main.css --style compressed",
     "rollup": "rollup -c"
