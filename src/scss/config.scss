@@ -1,17 +1,37 @@
+:root {
+    // success variable
+  --formsflow-success: #157f1f;
+  --formsflow-dark-success: #0b4010;
+  --formsflow-light-success: #cde8d0;
 
-$fwf-primary: var(--fwf-primary,#1B34FB );
-$fwf-secondary: var(--fwf-secondary,#B4B4B4 );
-$fwf-warning: var(--fwf-warning,#FCBA19 );
-$fwf-danger: var(--fwf-danger,#C70F0F );
-$fwf-success: var(--fwf-success,#157F1F );
-$fwf-info: var(--fwf-info,#3B99FC );
-$fwf-hover-blue: var(--fwf-hover-blue,#D1D6FE);
-$fwf-light-blue: var(--fwf-light-blue,#E8EAFE);
+    // primary variable
+  --formsflow-primary: #1b34fb;
+  --formsflow-light-primary: #d1d6fe;
+  --formsflow-lightest-Primary: #e8eafe;
 
-// text variable
+    // info variable
+  --formsflow-info: #3b99fc;
+  --formsflow-light-info: #d9eaf7;
 
-$fwf-text-white: var(--fwf-text-white, #ffff);
-$fwf-text-dark: var(--fwf-text-dark, #0000);
- 
+    // danger variable
+  --formsflow-danger: #c70f0f;
+  --formsflow-dark-danger: #8c0b0b;
+  --formsflow-light-danger: #f7dbdb;
+
+    // warning variable
+  --formsflow-warning: #fcba19;
+  --formsflow-dark-warning: #6c4a00;
+  --formsflow-light-warning: #f9f1c6;
+
+    // secondary variable
+  --formsflow-secondary: #ced7e0;
+  --formsflow-lightest-secondary: #f2f2f2;
+  --formsflow-light-secondary: #e6e6e6;
+  --formsflow-medium-secondary: #b4b4b4;
+  --formsflow-dark-secondary: #787878;
 
 
+    // color variable
+  --formsflow-white: #ffffff;
+  --formsflow-black: #131313;
+}
