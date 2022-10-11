@@ -1,0 +1,128 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+ 
+
+.fwf-btn{
+	display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    font-size: 1rem;
+	line-height: 1.5;
+	border-radius: $border-radius;
+	border: $border-thickness solid transparent;
+	transition: 0.3s ease-out;
+}
+
+.fwf-btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+// button size
+.fwf-btn-md{
+	padding: 0.375rem 0.75rem;
+}
+
+.fwf-btn-lg{
+	padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem
+}
+ 
+.fwf-btn-sm{
+	padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    border-radius: 0.2rem;
+}
+
+
+
+// primary button
+
+.fwf-btn-primary{
+	color: $color-btn-text-white;
+    background-color: $color-btn-primary-bg;
+	
+	&:hover{
+		background-color: $color-btn-primary-bg-hover;
+	}
+	&:focus{
+		border:2px solid $color-btn-primary-focus;  
+	}
+}
+
+.fwf-btn-primary-outline{
+	color: $color-btn-primary-bg;
+	background-color: $color-bg-white;
+	border:2px solid $color-btn-primary-focus; 
+	&:hover{
+	    color: $color-btn-text-white;
+		background-color: $color-btn-primary-bg-hover;
+	}
+	&:focus{
+	    color: $color-btn-text-white;
+		background-color: $color-btn-primary-bg;
+	}
+}
+
+
+ 
+
+// secondary button
+.fwf-btn-secondary{
+	color: $color-text-black;
+    background-color: $color-btn-secondary-bg;
+	
+	&:hover{
+		background-color: $color-btn-secondary-bg-hover;
+	}
+	&:focus{
+		border:2px solid $color-btn-secondary-bg-hover;  
+	}
+}
+
+.fwf-btn-secondary-outline{
+	color: $color-text-black;
+    background-color: $color-bg-white;
+	border:2px solid $color-btn-secondary-bg-hover; 
+	&:hover{
+		background-color: $color-btn-secondary-bg-hover;
+	}
+	&:focus{
+		background-color: $color-btn-secondary-bg;
+	}
+}
+
+
+// danger button
+.fwf-btn-danger{
+	color: $color-text-white;
+    background-color: $color-btn-danger-bg;
+	
+	&:hover{
+		background-color: $color-btn-danger-bg-hover;
+	}
+	&:focus{
+		border:2px solid $color-btn-dagnger-focus;  
+	}
+}
+
+.fwf-btn-danger-outline{
+	color: $color-btn-danger-bg;
+    background-color: $color-bg-white;
+	border:2px solid $color-btn-dagnger-focus;  
+	
+	&:hover{
+		color: $color-text-white;
+		background-color: $color-btn-danger-bg-hover;
+	}
+	&:focus{
+		color: $color-text-white;
+		background-color: $color-btn-danger-bg;
+	}
+}
+
+ 
