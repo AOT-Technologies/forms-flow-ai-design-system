@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+
+/**
+ * In this file, we take the literal colors from our palette (defined in variables.scss)
+ * and define them against variables that we can utilise anywhere throughout the project.
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #GLOBAL TEXT COLOR
+\*------------------------------------*/
+
+ 
+
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+ 
+$color-btn-text-white: $color-text-white !default;
+$color-btn-text-black: $color-text-black !default;
+
+$color-btn-primary-bg: $color-neutral-primary !default;
+$color-btn-primary-bg-hover: $color-dark-primary !default;
+$color-btn-primary-focus: $color-lightest-primary !default;
+ 
+
+
+$color-btn-secondary-bg:  $color-lightest-secondary !default;
+$color-btn-secondary-bg-hover: $color-neutral-secondary !default;
+$color-btn-secondary-focus: $color-lightest-secondary !default;
+
+
+
+$color-btn-danger-bg:  $color-neutral-danger !default;
+$color-btn-danger-bg-hover: $color-dark-danger !default;
+$color-btn-dagnger-focus: $color-light-danger !default;
+
+
+
+$color-btn-disabled-bg: $color-light-secondary !default;
+
+
+
