@@ -8,7 +8,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "sass": "node-sass --watch ./src/css -o ./src/css",
-    "build-sass": "node-sass  ./src/css -o css"
+    "build-sass": "node-sass  ./src/css -o css --output-style compressed"
   },
   "repository": {
     "type": "git",
@@ -27,15 +27,15 @@
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
     "@storybook/addon-links": "^6.5.12",
+    "@storybook/addons": "^6.5.12",
     "@storybook/builder-webpack4": "^6.5.12",
     "@storybook/html": "^6.5.12",
     "@storybook/manager-webpack4": "^6.5.12",
     "@storybook/testing-library": "0.0.13",
+    "@storybook/theming": "^6.5.12",
     "babel-loader": "^8.2.5",
-    "typescript": "^4.8.4",
-    "@storybook/addons": "^6.5.12",
-    "@storybook/theming": "^6.5.12"
+    "node-sass": "^7.0.3",
+    "typescript": "^4.8.4"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
