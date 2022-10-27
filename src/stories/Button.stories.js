@@ -10,9 +10,9 @@ export default {
       options: ['forms-flow-btn-sm', 'forms-flow-btn-md', 'forms-flow-btn-lg'],
     },
   },
-} as Meta;
+}
 
-const Template: Story<ButtonProps> = (args) => {
+const Template= (args) => {
   return createButton(args);
 };
 

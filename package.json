@@ -1,12 +1,12 @@
 {
-  "name": "final",
+  "name": "formsflow-design-system",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook":"start-storybook -p 6006",
-    "develop": "start-storybook -p 6006 && node-sass --watch ./src/css -o ./src/css",
+    "sass": "node-sass --watch ./src/css -o ./src/css",
     "build-storybook": "build-storybook",
     "build-sass": "node-sass  ./src/css -o css --output-style compressed"
   },
