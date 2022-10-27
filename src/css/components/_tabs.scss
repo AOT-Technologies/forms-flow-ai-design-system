@@ -1,0 +1,28 @@
+/* Style the tab */
+.formsflow-tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    opacity: 1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .formsflow-tab button {
+    background-color: inherit;
+    float: left;
+    border: 2px solid white;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .formsflow-tab button:hover {
+    border-bottom: 2px solid blue;
+  }
+  
+  /* Create an active/current tablink class */
+  .formsflow-tab button:focus {
+    border: 2px solid #3B99FC;
+    border-radius: 4px;
+  }
