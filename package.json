@@ -37,7 +37,7 @@
     "@storybook/theming": "^6.5.12",
     "babel-loader": "^8.2.5",
     "concurrently": "^7.5.0",
-    "node-sass": "^7.0.3",
+    "node-sass": "^7.0.3"
   },
   "dependencies": {}
 }
