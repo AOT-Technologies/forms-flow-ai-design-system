@@ -1,0 +1,35 @@
+name: Storybook
+
+on:
+  push:
+    branches: [ "master","dev" ]
+  pull_request:
+    branches: ["master","dev"]
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+        
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build-storybook 
+    - run: npm run storybook & npx wait-on http://localhost:6006
+    - name: Run Axe
+      run: |
+        npm install -g @axe-core/cli
+        axe http://localhost:6006 --exit
+    
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: storybook-static 
