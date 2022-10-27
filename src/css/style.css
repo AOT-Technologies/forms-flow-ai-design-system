@@ -145,13 +145,11 @@
 /*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
-* {
-  font-family: var(--formsflow-font-family, "Poppins", sans-serif); }
-
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
 .formsflow-btn {
+  font-family: var(--formsflow-font-family, "Poppins", sans-serif);
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -249,6 +247,7 @@
 
 /* Style the tab */
 .formsflow-tab {
+  font-family: var(--formsflow-font-family, "Poppins", sans-serif);
   overflow: hidden;
   border-bottom: 1px solid var(--formsflow-medium-secondary, #b4b4b4);
   opacity: 1; }
