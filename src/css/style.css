@@ -3,7 +3,6 @@
 \*------------------------------------*/
 /**
  * ABSTRACTS..............................Declarations of Sass variables & mixins
- * BASE...................................Default element styles
  * LAYOUT.................................Layout-specific styles
  * COMPONENTS.............................Component styles
  * UTILITIES..............................Utility classes
@@ -152,7 +151,7 @@
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
-.forms-flow-btn {
+.formsflow-btn {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -165,86 +164,86 @@
   border: 2px solid transparent;
   transition: 0.3s ease-out; }
 
-.forms-flow-btn:not(:disabled):not(.disabled) {
+.formsflow-btn:not(:disabled):not(.disabled) {
   cursor: pointer; }
 
-.forms-flow-btn-md {
+.formsflow-btn-md {
   padding: 0.375rem 0.75rem; }
 
-.forms-flow-btn-lg {
+.formsflow-btn-lg {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
 
-.forms-flow-btn-sm {
+.formsflow-btn-sm {
   padding: 0.25rem 0.5rem;
   font-size: .875rem;
   border-radius: 0.2rem; }
 
-.forms-flow-btn-primary {
+.formsflow-btn-primary {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-primary, #1b34fb); }
 
-.forms-flow-btn-primary:hover {
+.formsflow-btn-primary:hover {
   background-color: var(--formsflow-dark-primary, #102094); }
 
-.forms-flow-btn-primary:focus {
+.formsflow-btn-primary:focus {
   border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
 
-.forms-flow-btn-primary-outline {
+.formsflow-btn-primary-outline {
   color: var(--formsflow-primary, #1b34fb);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
 
-.forms-flow-btn-primary-outline:hover {
+.formsflow-btn-primary-outline:hover {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-dark-primary, #102094); }
 
-.forms-flow-btn-primary-outline:focus {
+.formsflow-btn-primary-outline:focus {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-primary, #1b34fb); }
 
-.forms-flow-btn-secondary {
+.formsflow-btn-secondary {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
 
-.forms-flow-btn-secondary:hover {
+.formsflow-btn-secondary:hover {
   background-color: var(--formsflow-secondary, #ced7e0); }
 
-.forms-flow-btn-secondary:focus {
+.formsflow-btn-secondary:focus {
   border: 2px solid var(--formsflow-secondary, #ced7e0); }
 
-.forms-flow-btn-secondary-outline {
+.formsflow-btn-secondary-outline {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-secondary, #ced7e0); }
 
-.forms-flow-btn-secondary-outline:hover {
+.formsflow-btn-secondary-outline:hover {
   background-color: var(--formsflow-secondary, #ced7e0); }
 
-.forms-flow-btn-secondary-outline:focus {
+.formsflow-btn-secondary-outline:focus {
   background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
 
-.forms-flow-btn-danger {
+.formsflow-btn-danger {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-danger, #c70f0f); }
 
-.forms-flow-btn-danger:hover {
+.formsflow-btn-danger:hover {
   background-color: var(--formsflow-dark-danger, #8c0b0b); }
 
-.forms-flow-btn-danger:focus {
+.formsflow-btn-danger:focus {
   border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
 
-.forms-flow-btn-danger-outline {
+.formsflow-btn-danger-outline {
   color: var(--formsflow-danger, #c70f0f);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
 
-.forms-flow-btn-danger-outline:hover {
+.formsflow-btn-danger-outline:hover {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-dark-danger, #8c0b0b); }
 
-.forms-flow-btn-danger-outline:focus {
+.formsflow-btn-danger-outline:focus {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-danger, #c70f0f); }
 
@@ -280,3 +279,21 @@
 
 .formsflow-tab button:focus {
   border-bottom: 2px solid var(--formsflow-primary, #1b34fb); }
+
+/*------------------------------------*\
+    #UTILITIES
+\*------------------------------------*/
+.formsflow-d-flex {
+  display: flex; }
+
+.formsflow-justify-content-between {
+  justify-content: space-between; }
+
+.formsflow-justify-content-evenly {
+  justify-content: space-evenly; }
+
+.formsflow-justify-content-around {
+  justify-content: space-around; }
+
+.formsflow-justify-content-start {
+  justify-content: start; }
