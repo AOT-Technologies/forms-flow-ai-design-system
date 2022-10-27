@@ -16,7 +16,7 @@ jobs:
         
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Build check
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
@@ -29,7 +29,3 @@ jobs:
         npm install -g @axe-core/cli
         axe http://localhost:6006 --exit
     
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: storybook-static 
