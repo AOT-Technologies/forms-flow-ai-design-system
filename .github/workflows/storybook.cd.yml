@@ -1,27 +1,17 @@
-name: Storybook
+name: Storybook publish
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master"]
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x]
-        
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Build
       uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
+    - run: npm i
     - run: npm run build-storybook 
-    
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:

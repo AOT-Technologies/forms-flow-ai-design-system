@@ -12,6 +12,7 @@
 /*------------------------------------*\
     #ABSTRACTS
 \*------------------------------------*/
+
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 @import "./abstracts/colors";
@@ -22,36 +23,8 @@
 
 
 /*------------------------------------*\
-    #BASE
-\*------------------------------------*/
-// @import "scss/base/reset";
-// @import "scss/base/body";
-// @import "scss/base/links";
-// @import "scss/base/lists";
-// @import "scss/base/headings";
-// @import "scss/base/forms";
-// @import "scss/base/buttons";
-// @import "scss/base/main";
-// @import "scss/base/media";
-// @import "scss/base/text";
-// @import "scss/base/table";
-
-
-
-
-
-/*------------------------------------*\
-    #LAYOUT
-\*------------------------------------*/
-// @import "scss/layout/layout";
-
-
-
-
-
-/*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
-@import "./components/buttons";
 @import "./components/body";
+@import "./components/buttons";
 @import "./components/tabs";

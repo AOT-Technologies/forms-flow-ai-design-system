@@ -57,6 +57,7 @@
 /**
  * Font Family
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 /**
  * Font Sizing
  */
@@ -143,18 +144,12 @@
     #TYPOGRAPHY
 \*------------------------------------*/
 /*------------------------------------*\
-    #BASE
-\*------------------------------------*/
-/*------------------------------------*\
-    #LAYOUT
-\*------------------------------------*/
-/*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
-.fwf-btn {
+.forms-flow-btn {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -167,73 +162,88 @@
   border: 2px solid transparent;
   transition: 0.3s ease-out; }
 
-.fwf-btn:not(:disabled):not(.disabled) {
+.forms-flow-btn:not(:disabled):not(.disabled) {
   cursor: pointer; }
 
-.fwf-btn-md {
+.forms-flow-btn-md {
   padding: 0.375rem 0.75rem; }
 
-.fwf-btn-lg {
+.forms-flow-btn-lg {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
 
-.fwf-btn-sm {
+.forms-flow-btn-sm {
   padding: 0.25rem 0.5rem;
   font-size: .875rem;
   border-radius: 0.2rem; }
 
-.fwf-btn-primary {
+.forms-flow-btn-primary {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-primary, #1b34fb); }
-  .fwf-btn-primary:hover {
-    background-color: var(--formsflow-dark-primary, #102094); }
-  .fwf-btn-primary:focus {
-    border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
 
-.fwf-btn-primary-outline {
+.forms-flow-btn-primary:hover {
+  background-color: var(--formsflow-dark-primary, #102094); }
+
+.forms-flow-btn-primary:focus {
+  border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
+
+.forms-flow-btn-primary-outline {
   color: var(--formsflow-primary, #1b34fb);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
-  .fwf-btn-primary-outline:hover {
-    color: var(--formsflow-text-white, #ffff);
-    background-color: var(--formsflow-dark-primary, #102094); }
-  .fwf-btn-primary-outline:focus {
-    color: var(--formsflow-text-white, #ffff);
-    background-color: var(--formsflow-primary, #1b34fb); }
 
-.fwf-btn-secondary {
+.forms-flow-btn-primary-outline:hover {
+  color: var(--formsflow-text-white, #ffff);
+  background-color: var(--formsflow-dark-primary, #102094); }
+
+.forms-flow-btn-primary-outline:focus {
+  color: var(--formsflow-text-white, #ffff);
+  background-color: var(--formsflow-primary, #1b34fb); }
+
+.forms-flow-btn-secondary {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
-  .fwf-btn-secondary:hover {
-    background-color: var(--formsflow-secondary, #ced7e0); }
-  .fwf-btn-secondary:focus {
-    border: 2px solid var(--formsflow-secondary, #ced7e0); }
 
-.fwf-btn-secondary-outline {
+.forms-flow-btn-secondary:hover {
+  background-color: var(--formsflow-secondary, #ced7e0); }
+
+.forms-flow-btn-secondary:focus {
+  border: 2px solid var(--formsflow-secondary, #ced7e0); }
+
+.forms-flow-btn-secondary-outline {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-secondary, #ced7e0); }
-  .fwf-btn-secondary-outline:hover {
-    background-color: var(--formsflow-secondary, #ced7e0); }
-  .fwf-btn-secondary-outline:focus {
-    background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
 
-.fwf-btn-danger {
+.forms-flow-btn-secondary-outline:hover {
+  background-color: var(--formsflow-secondary, #ced7e0); }
+
+.forms-flow-btn-secondary-outline:focus {
+  background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
+
+.forms-flow-btn-danger {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-danger, #c70f0f); }
-  .fwf-btn-danger:hover {
-    background-color: var(--formsflow-dark-danger, #8c0b0b); }
-  .fwf-btn-danger:focus {
-    border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
 
-.fwf-btn-danger-outline {
+.forms-flow-btn-danger:hover {
+  background-color: var(--formsflow-dark-danger, #8c0b0b); }
+
+.forms-flow-btn-danger:focus {
+  border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
+
+.forms-flow-btn-danger-outline {
   color: var(--formsflow-danger, #c70f0f);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
-  .fwf-btn-danger-outline:hover {
-    color: var(--formsflow-text-white, #ffff);
-    background-color: var(--formsflow-dark-danger, #8c0b0b); }
-  .fwf-btn-danger-outline:focus {
-    color: var(--formsflow-text-white, #ffff);
-    background-color: var(--formsflow-danger, #c70f0f); }
+
+.forms-flow-btn-danger-outline:hover {
+  color: var(--formsflow-text-white, #ffff);
+  background-color: var(--formsflow-dark-danger, #8c0b0b); }
+
+.forms-flow-btn-danger-outline:focus {
+  color: var(--formsflow-text-white, #ffff);
+  background-color: var(--formsflow-danger, #c70f0f); }
+
+* {
+  font-family: var(--formsflow-font-family, "Poppins", sans-serif); }
