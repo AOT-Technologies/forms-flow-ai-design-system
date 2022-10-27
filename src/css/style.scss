@@ -3,7 +3,6 @@
 \*------------------------------------*/
 /**
  * ABSTRACTS..............................Declarations of Sass variables & mixins
- * BASE...................................Default element styles
  * LAYOUT.................................Layout-specific styles
  * COMPONENTS.............................Component styles
  * UTILITIES..............................Utility classes
@@ -20,11 +19,16 @@
 
 
 
-
-
 /*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
 @import "./components/body";
 @import "./components/buttons";
 @import "./components/tabs";
+
+
+/*------------------------------------*\
+    #UTILITIES
+\*------------------------------------*/
+@import "./utils/alignment"
+

@@ -3,7 +3,6 @@
 \*------------------------------------*/
 /**
  * ABSTRACTS..............................Declarations of Sass variables & mixins
- * BASE...................................Default element styles
  * LAYOUT.................................Layout-specific styles
  * COMPONENTS.............................Component styles
  * UTILITIES..............................Utility classes
@@ -280,3 +279,21 @@
 
 .formsflow-tab button:focus {
   border-bottom: 2px solid var(--formsflow-primary, #1b34fb); }
+
+/*------------------------------------*\
+    #UTILITIES
+\*------------------------------------*/
+.formsflow-d-flex {
+  display: flex; }
+
+.formsflow-justify-content-between {
+  justify-content: space-between; }
+
+.formsflow-justify-content-evenly {
+  justify-content: space-evenly; }
+
+.formsflow-justify-content-around {
+  justify-content: space-around; }
+
+.formsflow-justify-content-start {
+  justify-content: start; }
