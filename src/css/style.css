@@ -143,12 +143,6 @@
     #TYPOGRAPHY
 \*------------------------------------*/
 /*------------------------------------*\
-    #BASE
-\*------------------------------------*/
-/*------------------------------------*\
-    #LAYOUT
-\*------------------------------------*/
-/*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
 /*------------------------------------*\
@@ -186,54 +180,66 @@
 .forms-flow-btn-primary {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-primary, #1b34fb); }
-  .forms-flow-btn-primary:hover {
-    background-color: var(--formsflow-dark-primary, #102094); }
-  .forms-flow-btn-primary:focus {
-    border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
+
+.forms-flow-btn-primary:hover {
+  background-color: var(--formsflow-dark-primary, #102094); }
+
+.forms-flow-btn-primary:focus {
+  border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
 
 .forms-flow-btn-primary-outline {
   color: var(--formsflow-primary, #1b34fb);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
-  .forms-flow-btn-primary-outline:hover {
-    color: var(--formsflow-text-white, #ffff);
-    background-color: var(--formsflow-dark-primary, #102094); }
-  .forms-flow-btn-primary-outline:focus {
-    color: var(--formsflow-text-white, #ffff);
-    background-color: var(--formsflow-primary, #1b34fb); }
+
+.forms-flow-btn-primary-outline:hover {
+  color: var(--formsflow-text-white, #ffff);
+  background-color: var(--formsflow-dark-primary, #102094); }
+
+.forms-flow-btn-primary-outline:focus {
+  color: var(--formsflow-text-white, #ffff);
+  background-color: var(--formsflow-primary, #1b34fb); }
 
 .forms-flow-btn-secondary {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
-  .forms-flow-btn-secondary:hover {
-    background-color: var(--formsflow-secondary, #ced7e0); }
-  .forms-flow-btn-secondary:focus {
-    border: 2px solid var(--formsflow-secondary, #ced7e0); }
+
+.forms-flow-btn-secondary:hover {
+  background-color: var(--formsflow-secondary, #ced7e0); }
+
+.forms-flow-btn-secondary:focus {
+  border: 2px solid var(--formsflow-secondary, #ced7e0); }
 
 .forms-flow-btn-secondary-outline {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-secondary, #ced7e0); }
-  .forms-flow-btn-secondary-outline:hover {
-    background-color: var(--formsflow-secondary, #ced7e0); }
-  .forms-flow-btn-secondary-outline:focus {
-    background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
+
+.forms-flow-btn-secondary-outline:hover {
+  background-color: var(--formsflow-secondary, #ced7e0); }
+
+.forms-flow-btn-secondary-outline:focus {
+  background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
 
 .forms-flow-btn-danger {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-danger, #c70f0f); }
-  .forms-flow-btn-danger:hover {
-    background-color: var(--formsflow-dark-danger, #8c0b0b); }
-  .forms-flow-btn-danger:focus {
-    border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
+
+.forms-flow-btn-danger:hover {
+  background-color: var(--formsflow-dark-danger, #8c0b0b); }
+
+.forms-flow-btn-danger:focus {
+  border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
 
 .forms-flow-btn-danger-outline {
   color: var(--formsflow-danger, #c70f0f);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
-  .forms-flow-btn-danger-outline:hover {
-    color: var(--formsflow-text-white, #ffff);
-    background-color: var(--formsflow-dark-danger, #8c0b0b); }
-  .forms-flow-btn-danger-outline:focus {
-    color: var(--formsflow-text-white, #ffff);
-    background-color: var(--formsflow-danger, #c70f0f); }
+
+.forms-flow-btn-danger-outline:hover {
+  color: var(--formsflow-text-white, #ffff);
+  background-color: var(--formsflow-dark-danger, #8c0b0b); }
+
+.forms-flow-btn-danger-outline:focus {
+  color: var(--formsflow-text-white, #ffff);
+  background-color: var(--formsflow-danger, #c70f0f); }
