@@ -3,7 +3,7 @@
 \*------------------------------------*/
  
 
-.forms-flow-btn{
+.formsflow-btn{
 	display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -17,22 +17,22 @@
 	transition: 0.3s ease-out;
 }
 
-.forms-flow-btn:not(:disabled):not(.disabled) {
+.formsflow-btn:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
 
 // button size
-.forms-flow-btn-md{
+.formsflow-btn-md{
 	padding: 0.375rem 0.75rem;
 }
 
-.forms-flow-btn-lg{
+.formsflow-btn-lg{
 	padding: 0.5rem 1rem;
     font-size: 1.25rem;
     border-radius: 0.3rem
 }
  
-.forms-flow-btn-sm{
+.formsflow-btn-sm{
 	padding: 0.25rem 0.5rem;
     font-size: .875rem;
     border-radius: 0.2rem;
@@ -42,7 +42,7 @@
 
 // primary button
 
-.forms-flow-btn-primary{
+.formsflow-btn-primary{
 	color: $color-btn-text-white;
     background-color: $color-btn-primary-bg;
 	
@@ -54,7 +54,7 @@
 	}
 }
 
-.forms-flow-btn-primary-outline{
+.formsflow-btn-primary-outline{
 	color: $color-btn-primary-bg;
 	background-color: $color-bg-white;
 	border:2px solid $color-btn-primary-focus; 
@@ -72,7 +72,7 @@
  
 
 // secondary button
-.forms-flow-btn-secondary{
+.formsflow-btn-secondary{
 	color: $color-text-black;
     background-color: $color-btn-secondary-bg;
 	
@@ -84,7 +84,7 @@
 	}
 }
 
-.forms-flow-btn-secondary-outline{
+.formsflow-btn-secondary-outline{
 	color: $color-text-black;
     background-color: $color-bg-white;
 	border:2px solid $color-btn-secondary-bg-hover; 
@@ -98,7 +98,7 @@
 
 
 // danger button
-.forms-flow-btn-danger{
+.formsflow-btn-danger{
 	color: $color-text-white;
     background-color: $color-btn-danger-bg;
 	
@@ -110,7 +110,7 @@
 	}
 }
 
-.forms-flow-btn-danger-outline{
+.formsflow-btn-danger-outline{
 	color: $color-btn-danger-bg;
     background-color: $color-bg-white;
 	border:2px solid $color-btn-dagnger-focus;  
