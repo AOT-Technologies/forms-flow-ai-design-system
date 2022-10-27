@@ -24,8 +24,8 @@ jobs:
     - run: npm ci
     - run: npm run build-storybook 
     - run: npm run storybook & npx wait-on http://localhost:6006
-    - name: Run Axe
+    - name: Run pa11y
       run: |
-        npm install -g @axe-core/cli
-        axe http://localhost:6006 --exit
+        npm install -g pa11y
+        pa11y http://localhost:6006
     
