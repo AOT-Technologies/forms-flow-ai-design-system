@@ -12,6 +12,15 @@ Clone this repository and follow these steps
 ```bash
   cd forms-flow-ai-design-system
   npm i
+  npm run storybook
+```
+## Development
+
+Clone this repository and follow these steps
+
+```bash
+  cd forms-flow-ai-design-system
+  npm i
   npm run dev
 ```
 
