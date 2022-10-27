@@ -1,28 +1,37 @@
 /* Style the tab */
 .formsflow-tab {
     overflow: hidden;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $colot-medium-seondary;
     opacity: 1;
   }
   
   /* Style the buttons that are used to open the tab content */
   .formsflow-tab button {
+    color: $color-neutral-primary;
+    margin-right: 3.125rem;
     background-color: inherit;
     float: left;
-    border: 2px solid white;
+    border: 2px solid $color-bg-white;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 0.875rem 1rem;
     transition: 0.3s;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 1;
   }
   
   /* Change background color of buttons on hover */
   .formsflow-tab button:hover {
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid $color-neutral-primary;
   }
   
   /* Create an active/current tablink class */
-  .formsflow-tab button:focus {
-    border: 2px solid #3B99FC;
+  .formsflow-tab button:focus-visible {
+    border: 2px solid $color-neutral-info;
     border-radius: 4px;
+  }
+
+  .formsflow-tab button:focus {
+    border-bottom: 2px solid $color-neutral-primary;
   }
