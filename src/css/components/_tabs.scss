@@ -2,7 +2,7 @@
 .formsflow-tab {
     font-family: $body-font-family;
     overflow: hidden;
-    border-bottom: 1px solid $colot-medium-seondary;
+    border-bottom: 1px solid $color-medium-seondary;
     opacity: 1;
   }
   
@@ -11,7 +11,6 @@
     color: $color-neutral-primary;
     margin-right: 3.125rem;
     background-color: inherit;
-    float: left;
     border: 2px solid $color-bg-white;
     outline: none;
     cursor: pointer;
