@@ -145,9 +145,6 @@
 /*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
-* {
-  font-family: var(--formsflow-font-family, "Poppins", sans-serif); }
-
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
@@ -310,12 +307,79 @@
   border-bottom: 2px solid var(--formsflow-primary, #1b34fb); }
 
 /* Create an active/current tablink class */
-.formsflow-tab button:focus-visible {
+.formsflow-tab button:focus-visible:not(:active) {
   border: 2px solid var(--formsflow-info, #3b99fc);
   border-radius: 4px; }
 
 .formsflow-tab button:focus {
   border-bottom: 2px solid var(--formsflow-primary, #1b34fb); }
+
+.formsflow-tab-button button {
+  background-color: var(--formsflow-lightest-Primary, #e8eafe);
+  font-family: var(--formsflow-font-family, "Poppins", sans-serif);
+  border: none;
+  margin-right: 3.125rem;
+  width: 8.625rem;
+  height: 2.75rem;
+  border-radius: 0.25rem;
+  opacity: 1;
+  outline: none; }
+
+.formsflow-tab-button button:hover {
+  background-color: var(--formsflow-light-primary, #d1d6fe);
+  cursor: pointer; }
+
+.formsflow-tab-button button:focus-visible:not(:active) {
+  border: 2px solid var(--formsflow-info, #3b99fc);
+  background-color: var(--formsflow-lightest-Primary, #e8eafe);
+  color: var(--formsflow-text-black, #131313); }
+
+.formsflow-tab-button button:focus {
+  background-color: var(--formsflow-primary, #1b34fb);
+  color: var(--formsflow-text-white, #ffff); }
+
+.formsflow-tab-steps {
+  display: flex; }
+
+.formsflow-tab-steps button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20.063rem;
+  height: 6rem;
+  border: 1px solid var(--formsflow-light-secondary, #e6e6e6);
+  background-color: var(--formsflow-bg-white, #ffff); }
+
+.formsflow-tab-steps button:hover {
+  background-color: var(--formsflow-light-secondary, #e6e6e6); }
+
+.formsflow-tab-steps button:focus-visible:not(:active) {
+  background-color: var(--formsflow-light-secondary, #e6e6e6);
+  outline: none; }
+
+.formsflow-tab-steps button:focus-visible:not(:active) span {
+  background-color: var(--formsflow-bg-black, #131313); }
+
+.formsflow-tab-steps button:focus {
+  background-color: var(--formsflow-light-success, #cde8d0);
+  outline: none; }
+
+.formsflow-tab-steps button:focus span {
+  background-color: var(--formsflow-success, #157f1f); }
+
+.formsflow-tab-steps button span {
+  background-color: var(--formsflow-bg-black, #131313);
+  color: var(--formsflow-text-white, #ffff);
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important; }
+
+.formsflow-tab-steps button p {
+  text-align: left; }
 
 /*------------------------------------*\
     #UTILITIES
