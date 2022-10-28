@@ -12,6 +12,7 @@
     vertical-align: middle;
     user-select: none;
     font-size: 1rem;
+	padding: 0.375rem 1.5rem;
 	line-height: 1.5;
 	border-radius: $border-radius;
 	border: $border-thickness solid transparent;
@@ -24,17 +25,18 @@
 
 // button size
 .formsflow-btn-md{
-	padding: 0.375rem 0.75rem;
+	padding: 0.375rem 1.5rem;
+    font-size: 1rem;
 }
 
 .formsflow-btn-lg{
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 2rem;
     font-size: 1.25rem;
     border-radius: 0.3rem
 }
  
 .formsflow-btn-sm{
-	padding: 0.25rem 0.5rem;
+	padding: 0.25rem 1rem;
     font-size: .875rem;
     border-radius: 0.2rem;
 }
@@ -96,6 +98,50 @@
 		background-color: $color-btn-secondary-bg;
 	}
 }
+
+
+.formsflow-btn-success{
+	color: $color-text-white;
+    background-color: $color-btn-success-bg;
+	
+	&:hover{
+		background-color: $color-btn-success-bg-hover;
+	}
+	&:focus{
+		border:2px solid $color-btn-success-bg-hover;  
+	}
+}
+
+
+.formsflow-btn-success-outline{
+	color: $color-btn-success-bg;
+    background-color: $color-bg-white;
+	border:2px solid $color-btn-success-focus;  
+	
+	&:hover{
+		color: $color-text-white;
+		background-color: $color-btn-success-bg-hover;
+	}
+	&:focus{
+		color: $color-text-white;
+		background-color: $color-btn-success-bg;
+	}
+}
+
+
+
+.formsflow-btn-secondary-outline{
+	color: $color-text-black;
+    background-color: $color-bg-white;
+	border:2px solid $color-btn-secondary-bg-hover; 
+	&:hover{
+		background-color: $color-btn-secondary-bg-hover;
+	}
+	&:focus{
+		background-color: $color-btn-secondary-bg;
+	}
+}
+
 
 
 // danger button
