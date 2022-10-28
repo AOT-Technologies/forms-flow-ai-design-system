@@ -157,6 +157,7 @@
   vertical-align: middle;
   user-select: none;
   font-size: 1rem;
+  padding: 0.375rem 1.5rem;
   line-height: 1.5;
   border-radius: 4px;
   border: 2px solid transparent;
@@ -166,15 +167,16 @@
   cursor: pointer; }
 
 .formsflow-btn-md {
-  padding: 0.375rem 0.75rem; }
+  padding: 0.375rem 1.5rem;
+  font-size: 1rem; }
 
 .formsflow-btn-lg {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
 
 .formsflow-btn-sm {
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 1rem;
   font-size: .875rem;
   border-radius: 0.2rem; }
 
@@ -210,6 +212,40 @@
 
 .formsflow-btn-secondary:focus {
   border: 2px solid var(--formsflow-secondary, #ced7e0); }
+
+.formsflow-btn-secondary-outline {
+  color: var(--formsflow-text-black, #131313);
+  background-color: var(--formsflow-bg-white, #ffff);
+  border: 2px solid var(--formsflow-secondary, #ced7e0); }
+
+.formsflow-btn-secondary-outline:hover {
+  background-color: var(--formsflow-secondary, #ced7e0); }
+
+.formsflow-btn-secondary-outline:focus {
+  background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
+
+.formsflow-btn-success {
+  color: var(--formsflow-text-white, #ffff);
+  background-color: var(--formsflow-success, #157f1f); }
+
+.formsflow-btn-success:hover {
+  background-color: var(--formsflow-dark-success, #0b4010); }
+
+.formsflow-btn-success:focus {
+  border: 2px solid var(--formsflow-dark-success, #0b4010); }
+
+.formsflow-btn-success-outline {
+  color: var(--formsflow-success, #157f1f);
+  background-color: var(--formsflow-bg-white, #ffff);
+  border: 2px solid var(--formsflow-light-success, #cde8d0); }
+
+.formsflow-btn-success-outline:hover {
+  color: var(--formsflow-text-white, #ffff);
+  background-color: var(--formsflow-dark-success, #0b4010); }
+
+.formsflow-btn-success-outline:focus {
+  color: var(--formsflow-text-white, #ffff);
+  background-color: var(--formsflow-success, #157f1f); }
 
 .formsflow-btn-secondary-outline {
   color: var(--formsflow-text-black, #131313);
@@ -296,3 +332,6 @@
 
 .formsflow-justify-content-start {
   justify-content: start; }
+
+.formsflow-child-m-3 > * {
+  margin-right: 1rem; }
