@@ -61,6 +61,9 @@
  * Font Sizing
  */
 /**
+ * Font Weight
+ */
+/**
  * Line Height
  */
 /*------------------------------------*\
@@ -330,9 +333,9 @@
   height: 1.5rem; }
 
 .formsflow-logo div {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  color: black; }
+  color: var(--formsflow-text-black, #131313); }
 
 /*------------------------------------*\
     #UTILITIES
