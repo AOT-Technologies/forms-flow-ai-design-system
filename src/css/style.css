@@ -337,3 +337,28 @@
 
 .formsflow-child-m-3 > * {
   margin-right: 1rem; }
+
+.formsflow-progressbar-container {
+  background-color: silver;
+  width: 100%;
+  border-radius: 15px; }
+
+.formsflow-progressbar-os {
+  background-color: #74c25c;
+  color: white;
+  text-align: right;
+  position: relative;
+  font-size: 2rem;
+  border-radius: 15px; }
+
+.formsflow-progressbar-in {
+  width: 80%; }
+
+.bg-danger {
+  background-color: #c70f0f !important }
+  .bg-warning {
+    background-color: #ffc107!important;
+}
+.bg-success {
+  background-color: #28a745!important;
+}
