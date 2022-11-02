@@ -1,4 +1,5 @@
-/* Style the tab */
+/* Style for standard tab start */
+
 .formsflow-tab {
     font-family: $body-font-family;
     overflow: hidden;
@@ -20,7 +21,6 @@
   text-align: center;
   opacity: 1;
 }
-  
   /* Change background color of buttons on hover */
 .formsflow-tab button:hover {
   border-bottom: 2px solid $color-neutral-primary;
@@ -35,6 +35,14 @@
 .formsflow-tab button:focus {
   border-bottom: 2px solid $color-neutral-primary;
 }
+
+.formsflow-tab .active {
+  border-bottom: 2px solid $color-neutral-primary;
+}
+
+/* Style for standard tab end */
+
+/* styles for button tab start*/
 
 .formsflow-tab-button button {
   background-color: $color-lightest-primary;
@@ -64,12 +72,26 @@
   color: $color-text-white;
 }
 
+.formsflow-tab-button .active{
+  background-color: $color-neutral-primary;
+  color: $color-text-white;
+  &:hover{
+    background-color: $color-neutral-primary;
+    color: $color-text-white;
+  }
+}
+
+/* Styles for button tabs end */
+
+/* Styles for step tabs start */
+
 .formsflow-tab-steps{
  display: flex;
 }
 
 .formsflow-tab-steps button {
   display: flex;
+  cursor: pointer;
   justify-content: flex-start;
   align-items: center;
   width: 20.063rem;
@@ -110,3 +132,20 @@
 .formsflow-tab-steps button p{
   text-align: left;
 }
+
+.formsflow-tab-steps .active {
+  background-color: $color-light-success;
+  outline: none;
+  span{
+    background-color: $color-neutral-success;
+  }
+  &:hover{
+    background-color: $color-light-success;
+  outline: none;
+  span{
+    background-color: $color-neutral-success;
+  }
+  }
+}
+
+/* Styles for step tabs end */

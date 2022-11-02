@@ -281,7 +281,7 @@
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-danger, #c70f0f); }
 
-/* Style the tab */
+/* Style for standard tab start */
 .formsflow-tab {
   font-family: var(--formsflow-font-family, "Poppins", sans-serif);
   overflow: hidden;
@@ -314,6 +314,11 @@
 .formsflow-tab button:focus {
   border-bottom: 2px solid var(--formsflow-primary, #1b34fb); }
 
+.formsflow-tab .active {
+  border-bottom: 2px solid var(--formsflow-primary, #1b34fb); }
+
+/* Style for standard tab end */
+/* styles for button tab start*/
 .formsflow-tab-button button {
   background-color: var(--formsflow-lightest-Primary, #e8eafe);
   font-family: var(--formsflow-font-family, "Poppins", sans-serif);
@@ -338,11 +343,22 @@
   background-color: var(--formsflow-primary, #1b34fb);
   color: var(--formsflow-text-white, #ffff); }
 
+.formsflow-tab-button .active {
+  background-color: var(--formsflow-primary, #1b34fb);
+  color: var(--formsflow-text-white, #ffff); }
+
+.formsflow-tab-button .active:hover {
+  background-color: var(--formsflow-primary, #1b34fb);
+  color: var(--formsflow-text-white, #ffff); }
+
+/* Styles for button tabs end */
+/* Styles for step tabs start */
 .formsflow-tab-steps {
   display: flex; }
 
 .formsflow-tab-steps button {
   display: flex;
+  cursor: pointer;
   justify-content: flex-start;
   align-items: center;
   width: 20.063rem;
@@ -381,6 +397,21 @@
 .formsflow-tab-steps button p {
   text-align: left; }
 
+.formsflow-tab-steps .active {
+  background-color: var(--formsflow-light-success, #cde8d0);
+  outline: none; }
+
+.formsflow-tab-steps .active span {
+  background-color: var(--formsflow-success, #157f1f); }
+
+.formsflow-tab-steps .active:hover {
+  background-color: var(--formsflow-light-success, #cde8d0);
+  outline: none; }
+
+.formsflow-tab-steps .active:hover span {
+  background-color: var(--formsflow-success, #157f1f); }
+
+/* Styles for step tabs end */
 /*------------------------------------*\
     #UTILITIES
 \*------------------------------------*/

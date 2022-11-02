@@ -9,11 +9,6 @@ import { Meta } from '@storybook/addon-docs';
   }} />
 
 
-
-
-
-
-
 ## Tabs
 Tabs allow users to toggle between different sections of content. Although its similar to expaders, tabs have a restriction to the
 number of tabs and much more limitations of content within the headings. Consider using other patterns more than 3 tabs.  
@@ -109,3 +104,48 @@ A step shows the completion status of an activity in a series of activities.
       </button>
     </div>
   ```
+
+#### Active state
+There is no need to add class to buttons since they are using psuedo-class. To force the appearance of active state use `.active` class
+
+<div class="formsflow-tab">
+  <button class="active">Tab label</button>
+</div>
+
+```html dark
+<div class="formsflow-tab">
+  <button class="active">Tab label</button>
+</div>
+```
+
+<div class="formsflow-tab-button">
+  <button class="active">Button tab</button>
+</div>
+
+```html dark
+<div class="formsflow-tab-button">
+  <button class="active">Button tab</button>
+</div>
+```
+
+<div class="formsflow-tab-steps">
+  <button class="active">
+    <span>1</span>
+    <p>
+      <div><b>STEP TITLE</b></div>
+      <div>Step description</div>
+    </p>
+  </button>
+</div>
+
+```html dark
+<div class="formsflow-tab-steps">
+  <button class="active">
+    <span>1</span>
+    <p>
+      <div><b>STEP TITLE</b></div>
+      <div>Step description</div>
+    </p>
+  </button>
+</div>
+```
