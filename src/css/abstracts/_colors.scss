@@ -15,7 +15,11 @@
     #GLOBAL TEXT COLOR
 \*------------------------------------*/
 
- 
+ $color-text-primary:$color-neutral-primary  !default;
+ $color-text-secondary:$color-neutral-secondary !default;
+ $color-text-success:$color-neutral-success !default;
+ $color-text-danger:$color-neutral-danger !default;
+ $color-text-warning:$color-neutral-warning !default;
 
 /*------------------------------------*\
     #BUTTONS
@@ -47,6 +51,18 @@ $color-btn-success-focus: $color-light-success !default;
 
 
 $color-btn-disabled-bg: $color-light-secondary !default;
+
+
+/* ------------------------------- progressbar ------------------------------ */
+
+$color-progress-standard : $color-bg-black !default;
+$color-progress-warning: $color-neutral-warning !default;
+$color-progress-success :  $color-neutral-success !default;
+$color-progress-danger:  $color-neutral-danger !default;
+$color-progress-bg :  $color-medium-seondary !default;
+
+
+
 
 
 
