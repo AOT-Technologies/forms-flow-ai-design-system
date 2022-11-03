@@ -43,7 +43,7 @@
 
 
 
-// primary button
+/* ----------------------------- primary button ----------------------------- */
 
 .formsflow-btn-primary{
 	color: $color-btn-text-white;
@@ -74,7 +74,7 @@
 
  
 
-// secondary button
+/* ---------------------------- secondary button ---------------------------- */
 .formsflow-btn-secondary{
 	color: $color-text-black;
     background-color: $color-btn-secondary-bg;
@@ -100,6 +100,8 @@
 }
 
 
+
+/* ------------------------------ succes button ----------------------------- */
 .formsflow-btn-success{
 	color: $color-text-white;
     background-color: $color-btn-success-bg;
@@ -130,21 +132,11 @@
 
 
 
-.formsflow-btn-secondary-outline{
-	color: $color-text-black;
-    background-color: $color-bg-white;
-	border:2px solid $color-btn-secondary-bg-hover; 
-	&:hover{
-		background-color: $color-btn-secondary-bg-hover;
-	}
-	&:focus{
-		background-color: $color-btn-secondary-bg;
-	}
-}
+ 
 
 
 
-// danger button
+/* ------------------------------ danger button ----------------------------- */
 .formsflow-btn-danger{
 	color: $color-text-white;
     background-color: $color-btn-danger-bg;
@@ -172,4 +164,29 @@
 	}
 }
 
- 
+
+/* ------------------------------ white button ------------------------------ */
+
+.formsflow-btn-white{
+	color: $color-text-black;
+    background-color: $color-btn-bg-white;
+	
+	&:hover{
+		background-color: $color-btn-secondary-bg;
+	}
+	&:focus{
+		border:2px solid $color-btn-secondary-bg;  
+	}
+}
+
+.formsflow-btn-white-outline{
+	color: $color-text-black;
+    background-color: $color-btn-bg-white;
+	border:2px solid $color-btn-secondary-bg; 
+	&:hover{
+		background-color: $color-btn-secondary-bg;
+	}
+	&:focus{
+		background-color: $color-btn-bg-white;
+	}
+}
