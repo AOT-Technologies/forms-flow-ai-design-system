@@ -234,66 +234,66 @@ number of tabs and much more limitations of content within the headings. Conside
       <button>Button tab</button>
     </div>
   ```
-### Steps
+## Steps
 A step shows the completion status of an activity in a series of activities.
 
 <br/>  
 <br/>
 
-<div class="formsflow-tab-steps">
-  <button>
+<div class="formsflow-steps">
+  <div class="step active">
     <span>1</span>
-    <p>
-      <div><b>STEP TITLE</b></div>
+    <div>
+      <div class="title">STEP TITLE</div>
       <div>Step description</div>
-    </p>
-  </button>
+    </div>
+  </div>
 
-  <button>
+  <div class="step">
     <span>2</span>
-    <p>
-      <div><b>STEP TITLE</b></div>
+    <div>
+      <div class="title">STEP TITLE</div>
       <div>Step description</div>
-    </p>
-  </button>
+    </div>
+  </div>
 
-  <button>
+  <div class="step">
     <span>3</span>
-    <p>
-      <div><b>STEP TITLE</b></div>
+    <div>
+      <div class="title">STEP TITLE</div>
       <div>Step description</div>
-    </p>
-  </button>
+    </div>
+  </div>
 </div>
 
 <div className="subheading">Usage</div>
 
   ```html dark
-    <div class="formsflow-tab-steps">
-      <button>
+    <div class="formsflow-steps">
+    <div class="step active">
         <span>1</span>
-        <p>
-          <div><b>STEP TITLE</b></div>
-          <div>Step description</div>
-        </p>
-      </button>
-
-      <button>
-        <span>2</span>
-        <p>
-          <div><b>STEP TITLE</b></div>
-          <div>Step description</div>
-        </p>
-      </button>
-
-      <button>
-        <span>3</span>
-        <p>
-          <div><b>STEP TITLE</b></div>
-          <div>Step description</div>
-        </p>
-      </button>
+        <div>
+            <div class="title">STEP TITLE</div>
+            <div>Step description</div>
+        </div>
     </div>
+
+    <div class="step">
+        <span>2</span>
+        <div>
+            <div class="title">STEP TITLE</div>
+            <div>Step description</div>
+        </div>
+    </div>
+
+    <div class="step">
+        <span>3</span>
+        <div>
+            <div class="title">STEP TITLE</div>
+            <div>Step description</div>
+        </div>
+    </div>
+</div>
   ```
 
 ## Expanders

@@ -1,0 +1,70 @@
+/* Styles for step tabs start */
+
+.formsflow-steps{
+    display: flex;
+   }
+   
+.formsflow-steps .step {
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20.063rem;
+    height: 6rem;
+    border: 1px solid $color-light-secondary;
+    background-color: $color-bg-white;
+    &:hover{
+    background-color: $color-light-secondary;
+    }
+    &:focus-visible:not(:active){
+    background-color: $color-light-secondary;
+    outline: none;
+    span{
+        background-color: $color-bg-black;
+    }
+    }
+    &:focus{
+    background-color: $color-light-success;
+    outline: none;
+    span{
+        background-color: $color-neutral-success;
+    }
+    }
+}
+
+.formsflow-steps .step span{
+    background-color: $color-bg-black;
+    color: $color-text-white;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+}
+
+.formsflow-steps .step div{
+    text-align: left;
+}
+.formsflow-steps .step .title{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.formsflow-steps .active {
+    background-color: $color-light-success;
+    outline: none;
+    span{
+    background-color: $color-neutral-success;
+    }
+    &:hover{
+    background-color: $color-light-success;
+    outline: none;
+    span{
+    background-color: $color-neutral-success;
+    }
+    }
+}
+   
+/* Styles for step tabs end */

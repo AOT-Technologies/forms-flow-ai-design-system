@@ -353,10 +353,10 @@
 
 /* Styles for button tabs end */
 /* Styles for step tabs start */
-.formsflow-tab-steps {
+.formsflow-steps {
   display: flex; }
 
-.formsflow-tab-steps button {
+.formsflow-steps .step {
   display: flex;
   cursor: pointer;
   justify-content: flex-start;
@@ -366,24 +366,24 @@
   border: 1px solid var(--formsflow-light-secondary, #e6e6e6);
   background-color: var(--formsflow-bg-white, #ffff); }
 
-.formsflow-tab-steps button:hover {
+.formsflow-steps .step:hover {
   background-color: var(--formsflow-light-secondary, #e6e6e6); }
 
-.formsflow-tab-steps button:focus-visible:not(:active) {
+.formsflow-steps .step:focus-visible:not(:active) {
   background-color: var(--formsflow-light-secondary, #e6e6e6);
   outline: none; }
 
-.formsflow-tab-steps button:focus-visible:not(:active) span {
+.formsflow-steps .step:focus-visible:not(:active) span {
   background-color: var(--formsflow-bg-black, #131313); }
 
-.formsflow-tab-steps button:focus {
+.formsflow-steps .step:focus {
   background-color: var(--formsflow-light-success, #cde8d0);
   outline: none; }
 
-.formsflow-tab-steps button:focus span {
+.formsflow-steps .step:focus span {
   background-color: var(--formsflow-success, #157f1f); }
 
-.formsflow-tab-steps button span {
+.formsflow-steps .step span {
   background-color: var(--formsflow-bg-black, #131313);
   color: var(--formsflow-text-white, #ffff);
   width: 2.5rem;
@@ -394,21 +394,25 @@
   margin-left: 1.5rem !important;
   margin-right: 1.5rem !important; }
 
-.formsflow-tab-steps button p {
+.formsflow-steps .step div {
   text-align: left; }
 
-.formsflow-tab-steps .active {
+.formsflow-steps .step .title {
+  text-transform: capitalize;
+  font-weight: bold; }
+
+.formsflow-steps .active {
   background-color: var(--formsflow-light-success, #cde8d0);
   outline: none; }
 
-.formsflow-tab-steps .active span {
+.formsflow-steps .active span {
   background-color: var(--formsflow-success, #157f1f); }
 
-.formsflow-tab-steps .active:hover {
+.formsflow-steps .active:hover {
   background-color: var(--formsflow-light-success, #cde8d0);
   outline: none; }
 
-.formsflow-tab-steps .active:hover span {
+.formsflow-steps .active:hover span {
   background-color: var(--formsflow-success, #157f1f); }
 
 /* Styles for step tabs end */
