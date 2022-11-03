@@ -1,6 +1,5 @@
 /* Style the logo */
 .formsflow-logo{
-    opacity: 1;
     display: flex;
     align-items: center;
     white-space: nowrap;
@@ -14,6 +13,6 @@
     div{
         font-size: $font-size-logo;
         font-weight: $font-weight-logo;
-        color: $color-text-black;
+        color: $color-logo-text;
         }
 }

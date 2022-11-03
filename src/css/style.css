@@ -322,7 +322,6 @@
 
 /* Style the logo */
 .formsflow-logo {
-  opacity: 1;
   display: flex;
   align-items: center;
   white-space: nowrap;
@@ -335,7 +334,7 @@
 .formsflow-logo div {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--formsflow-text-black, #131313); }
+  color: var(--formsflow-logo-text, #131313); }
 
 /*------------------------------------*\
     #UTILITIES
