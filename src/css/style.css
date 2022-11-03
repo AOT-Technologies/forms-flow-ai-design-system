@@ -358,11 +358,10 @@
 
 .formsflow-steps .step {
   display: flex;
-  cursor: pointer;
   justify-content: flex-start;
   align-items: center;
-  width: 20.063rem;
-  height: 6rem;
+  width: 100%;
+  min-height: 6rem;
   border: 1px solid var(--formsflow-light-secondary, #e6e6e6);
   background-color: var(--formsflow-bg-white, #ffff); }
 
