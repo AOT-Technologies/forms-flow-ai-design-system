@@ -148,9 +148,6 @@
 /*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
-* {
-  font-family: var(--formsflow-font-family, "Poppins", sans-serif); }
-
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
@@ -186,6 +183,7 @@
   font-size: .875rem;
   border-radius: 0.2rem; }
 
+/* ----------------------------- primary button ----------------------------- */
 .formsflow-btn-primary {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-primary, #1b34fb); }
@@ -209,6 +207,7 @@
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-primary, #1b34fb); }
 
+/* ---------------------------- secondary button ---------------------------- */
 .formsflow-btn-secondary {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
@@ -230,6 +229,7 @@
 .formsflow-btn-secondary-outline:focus {
   background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
 
+/* ------------------------------ succes button ----------------------------- */
 .formsflow-btn-success {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-success, #157f1f); }
@@ -253,17 +253,7 @@
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-success, #157f1f); }
 
-.formsflow-btn-secondary-outline {
-  color: var(--formsflow-text-black, #131313);
-  background-color: var(--formsflow-bg-white, #ffff);
-  border: 2px solid var(--formsflow-secondary, #ced7e0); }
-
-.formsflow-btn-secondary-outline:hover {
-  background-color: var(--formsflow-secondary, #ced7e0); }
-
-.formsflow-btn-secondary-outline:focus {
-  background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
-
+/* ------------------------------ danger button ----------------------------- */
 .formsflow-btn-danger {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-danger, #c70f0f); }
@@ -287,7 +277,29 @@
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-danger, #c70f0f); }
 
-/* Style the tab */
+/* ------------------------------ white button ------------------------------ */
+.formsflow-btn-white {
+  color: var(--formsflow-text-black, #131313);
+  background-color: var(--formsflow-bg-white, #ffff); }
+
+.formsflow-btn-white:hover {
+  background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
+
+.formsflow-btn-white:focus {
+  border: 2px solid var(--formsflow-lightest-secondary, #f2f2f2); }
+
+.formsflow-btn-white-outline {
+  color: var(--formsflow-text-black, #131313);
+  background-color: var(--formsflow-bg-white, #ffff);
+  border: 2px solid var(--formsflow-lightest-secondary, #f2f2f2); }
+
+.formsflow-btn-white-outline:hover {
+  background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
+
+.formsflow-btn-white-outline:focus {
+  background-color: var(--formsflow-bg-white, #ffff); }
+
+/* Style for standard tab start */
 .formsflow-tab {
   font-family: var(--formsflow-font-family, "Poppins", sans-serif);
   overflow: hidden;
@@ -313,7 +325,7 @@
   border-bottom: 2px solid var(--formsflow-primary, #1b34fb); }
 
 /* Create an active/current tablink class */
-.formsflow-tab button:focus-visible {
+.formsflow-tab button:focus-visible:not(:active) {
   border: 2px solid var(--formsflow-info, #3b99fc);
   border-radius: 4px; }
 
@@ -336,6 +348,107 @@
   font-weight: 700;
   color: var(--formsflow-logo-text, #131313); }
 
+.formsflow-tab .active {
+  border-bottom: 2px solid var(--formsflow-primary, #1b34fb); }
+
+/* Style for standard tab end */
+/* styles for button tab start*/
+.formsflow-tab-button button {
+  background-color: var(--formsflow-lightest-Primary, #e8eafe);
+  font-family: var(--formsflow-font-family, "Poppins", sans-serif);
+  border: none;
+  margin-right: 3.125rem;
+  width: 8.625rem;
+  height: 2.75rem;
+  border-radius: 0.25rem;
+  opacity: 1;
+  outline: none; }
+
+.formsflow-tab-button button:hover {
+  background-color: var(--formsflow-light-primary, #d1d6fe);
+  cursor: pointer; }
+
+.formsflow-tab-button button:focus-visible:not(:active) {
+  border: 2px solid var(--formsflow-info, #3b99fc);
+  background-color: var(--formsflow-lightest-Primary, #e8eafe);
+  color: var(--formsflow-text-black, #131313); }
+
+.formsflow-tab-button button:focus {
+  background-color: var(--formsflow-primary, #1b34fb);
+  color: var(--formsflow-text-white, #ffff); }
+
+.formsflow-tab-button .active {
+  background-color: var(--formsflow-primary, #1b34fb);
+  color: var(--formsflow-text-white, #ffff); }
+
+.formsflow-tab-button .active:hover {
+  background-color: var(--formsflow-primary, #1b34fb);
+  color: var(--formsflow-text-white, #ffff); }
+
+/* Styles for button tabs end */
+/* Styles for step tabs start */
+.formsflow-steps {
+  display: flex; }
+
+.formsflow-steps .step {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 6rem;
+  border: 1px solid var(--formsflow-light-secondary, #e6e6e6);
+  background-color: var(--formsflow-bg-white, #ffff); }
+
+.formsflow-steps .step:hover {
+  background-color: var(--formsflow-light-secondary, #e6e6e6); }
+
+.formsflow-steps .step:focus-visible:not(:active) {
+  background-color: var(--formsflow-light-secondary, #e6e6e6);
+  outline: none; }
+
+.formsflow-steps .step:focus-visible:not(:active) span {
+  background-color: var(--formsflow-bg-black, #131313); }
+
+.formsflow-steps .step:focus {
+  background-color: var(--formsflow-light-success, #cde8d0);
+  outline: none; }
+
+.formsflow-steps .step:focus span {
+  background-color: var(--formsflow-success, #157f1f); }
+
+.formsflow-steps .step span {
+  background-color: var(--formsflow-bg-black, #131313);
+  color: var(--formsflow-text-white, #ffff);
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important; }
+
+.formsflow-steps .step div {
+  text-align: left; }
+
+.formsflow-steps .step .title {
+  text-transform: capitalize;
+  font-weight: bold; }
+
+.formsflow-steps .active {
+  background-color: var(--formsflow-light-success, #cde8d0);
+  outline: none; }
+
+.formsflow-steps .active span {
+  background-color: var(--formsflow-success, #157f1f); }
+
+.formsflow-steps .active:hover {
+  background-color: var(--formsflow-light-success, #cde8d0);
+  outline: none; }
+
+.formsflow-steps .active:hover span {
+  background-color: var(--formsflow-success, #157f1f); }
+
+/* Styles for step tabs end */
 /*------------------------------------*\
     #UTILITIES
 \*------------------------------------*/
