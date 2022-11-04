@@ -9,11 +9,6 @@ import { Meta } from '@storybook/addon-docs';
   }} />
 
 
-
-
-
-
-
 ## Tabs
 Tabs allow users to toggle between different sections of content. Although its similar to expaders, tabs have a restriction to the
 number of tabs and much more limitations of content within the headings. Consider using other patterns more than 3 tabs.  
@@ -33,3 +28,42 @@ number of tabs and much more limitations of content within the headings. Conside
         <button>Tab label</button>
     </div>
   ```
+
+### Button tabs  
+<br/>
+<div class="formsflow-tab-button">
+  <button>Button tab</button>
+  <button>Button tab</button>
+  <button>Button tab</button>
+</div>
+
+  ```html dark
+    <div class="formsflow-tab-button">
+      <button>Button tab</button>
+      <button>Button tab</button>
+      <button>Button tab</button>
+    </div>
+  ```
+
+#### Active state
+There is no need to add class to buttons since they are using psuedo-class. To force the appearance of active state use `.active` class
+
+<div class="formsflow-tab">
+  <button class="active">Tab label</button>
+</div>
+
+```html dark
+<div class="formsflow-tab">
+  <button class="active">Tab label</button>
+</div>
+```
+
+<div class="formsflow-tab-button">
+  <button class="active">Button tab</button>
+</div>
+
+```html dark
+<div class="formsflow-tab-button">
+  <button class="active">Button tab</button>
+</div>
+```

@@ -217,6 +217,84 @@ number of tabs and much more limitations of content within the headings. Conside
         <button>Tab label</button>
     </div>
   ```
+### Button tabs  
+<br/>
+<div class="formsflow-tab-button">
+  <button>Button tab</button>
+  <button>Button tab</button>
+  <button>Button tab</button>
+</div>
+
+<div className="subheading">Usage</div>
+
+  ```html dark
+    <div class="formsflow-tab-button">
+      <button>Button tab</button>
+      <button>Button tab</button>
+      <button>Button tab</button>
+    </div>
+  ```
+## Steps
+A step shows the completion status of an activity in a series of activities.
+
+<br/>  
+<br/>
+
+<div class="formsflow-steps">
+  <div class="step active">
+    <span>1</span>
+    <div>
+      <div class="title">STEP TITLE</div>
+      <div>Step description</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <span>2</span>
+    <div>
+      <div class="title">STEP TITLE</div>
+      <div>Step description</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <span>3</span>
+    <div>
+      <div class="title">STEP TITLE</div>
+      <div>Step description</div>
+    </div>
+  </div>
+</div>
+
+<div className="subheading">Usage</div>
+
+  ```html dark
+    <div class="formsflow-steps">
+    <div class="step active">
+        <span>1</span>
+        <div>
+            <div class="title">STEP TITLE</div>
+            <div>Step description</div>
+        </div>
+    </div>
+
+    <div class="step">
+        <span>2</span>
+        <div>
+            <div class="title">STEP TITLE</div>
+            <div>Step description</div>
+        </div>
+    </div>
+
+    <div class="step">
+        <span>3</span>
+        <div>
+            <div class="title">STEP TITLE</div>
+            <div>Step description</div>
+        </div>
+    </div>
+</div>
+  ```
 
 ## Expanders
 
@@ -227,11 +305,36 @@ number of tabs and much more limitations of content within the headings. Conside
 
 ## Progress Indicators
 progress bar indicates that the user's request has been received and the application is making progress toward completing the requested action.
+<p>Given below different types of progress bar and you can customize the progress bar using following steps</p>
+ <ul>
+ <li>change the "aria-valuenow" attribute with actual value to show the percentage of the progress</li>
+ <li>change the "left" attribute of "formsflow-progressbar-count"  as per your requirements </li>
+ <li>change the "width" attribute  "formsflow-progressbar"  as per your requirements to increse the length of progress bar </li>
+ <li>change the "height" attribute of "formsflow-progressbar-container" to increase the height of the progress bar </li>
+ </ul>
+ <br/>
+<div class="formsflow-progressbar-container formsflow-progressbar-standard" style={{height:"2px"}} >
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
+     <div class="formsflow-progressbar">
+        <div style={{"width":"90%"}}></div>
+    </div>
+    <span>Uploading Files</span>
+</div>
+ <div className="subheading">Usage</div>
+
+```html dark
+<div class="formsflow-progressbar-container formsflow-progressbar-standard" style="height:2px" >
+  <div class="formsflow-progressbar-count" aria-valuenow="90%" style="left:90%"></div>
+  <div class="formsflow-progressbar"><div style="width:90%"></div></div>
+  <span>Uploading Files</span>
+</div>
+
+```
 
 <div class="formsflow-progressbar-container formsflow-progressbar-success" style={{height:"2px"}}>
     <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
      <div class="formsflow-progressbar">
-       <div class="" style={{"width":"90%"}}></div>
+       <div  style={{"width":"90%"}}></div>
     </div>
     <span>Success Message</span>
 </div>
@@ -241,13 +344,11 @@ progress bar indicates that the user's request has been received and the applica
   
 
   ```html dark
-    <div class="formsflow-progressbar-container formsflow-progressbar-success" style={{height:"2px"}}>
-    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
-     <div class="formsflow-progressbar">
-       <div class="" style={{"width":"90%"}}></div>
-    </div>
+  <div class="formsflow-progressbar-container formsflow-progressbar-success" style="height:2px">
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style="left:90%"></div>
+     <div class="formsflow-progressbar"><div class="" style="width:90%"></div></div>
     <span>Success Message</span>
-</div>
+  </div>
   ```
 <div class="formsflow-progressbar-container formsflow-progressbar-warning"  style={{height:"2px"}} >
     <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
@@ -260,12 +361,10 @@ progress bar indicates that the user's request has been received and the applica
 <div className="subheading">Usage</div>
 
 ```html dark
-<div class="formsflow-progressbar-container formsflow-progressbar-warning"  style={{height:"2px"}} >
-    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
-     <div class="formsflow-progressbar">
-       <div style={{"width":"90%"}}></div>
-    </div>
-      <span>Warning Message</span>
+<div class="formsflow-progressbar-container formsflow-progressbar-warning"  style="height:2px">
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style="left:90%"></div>
+    <div class="formsflow-progressbar"><div style="width:90%"></div></div>
+    <span>Warning Message</span>
 </div>
 
 ```
@@ -280,12 +379,10 @@ progress bar indicates that the user's request has been received and the applica
 <div className="subheading">Usage</div>
 
 ```html dark
-<div class="formsflow-progressbar-container formsflow-progressbar-danger" style={{height:"2px"}}>
-    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
-     <div class="formsflow-progressbar">
-       <div style={{"width":"90%"}}></div>
-    </div>
-      <span>Danger Message</span>
+<div class="formsflow-progressbar-container formsflow-progressbar-danger" style="height:2px">
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style="left:90%"></div>
+    <div class="formsflow-progressbar"><div style="width:90%"></div></div>
+    <span>Danger Message</span>
 </div>
 
 ```
