@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently npm:watch:*",
     "watch:storybook": "start-storybook -p 6006",
-    "storybook": "start-storybook -p 6006",
     "watch:sass-dev": "node-sass --watch ./src/css -o ./src/css",
+    "sass":"node-sass  ./src/css -o ./src/css",
+    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build-sass": "node-sass  ./src/css -o dist --output-style compressed"
   },
