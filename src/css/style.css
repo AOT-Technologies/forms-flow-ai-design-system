@@ -374,16 +374,16 @@
 .formsflow-logo {
   display: flex;
   align-items: center;
-  white-space: nowrap;
-  padding: 0.375rem;
-  font-size: 1.3rem;
-  font-weight: 800;
+  padding: 0.375rem; }
+
+.formsflow-logo span {
+  font-weight: 700;
+  margin-left: 4px;
+  font-size: 2.1rem;
   color: var(--formsflow-logo-text, #131313) !important; }
 
-.formsflow-logo img, .formsflow-logo a {
-  max-width: 100%;
-  height: 1.5rem;
-  text-decoration: none; }
+.formsflow-logo img {
+  max-height: 2.5rem; }
 
 /* Styles for step tabs start */
 .formsflow-steps {
