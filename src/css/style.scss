@@ -17,6 +17,11 @@
 @import "./abstracts/colors";
 @import "./abstracts/typography";
 
+/*------------------------------------*\
+    #UTILITIES
+\*------------------------------------*/
+@import "./utils/alignment";
+@import "./utils/text";
 
 
 /*------------------------------------*\
@@ -25,11 +30,8 @@
 @import "./components/body";
 @import "./components/buttons";
 @import "./components/tabs";
+@import "./components/progressbar";
 @import "./components/steps";
 
 
-/*------------------------------------*\
-    #UTILITIES
-\*------------------------------------*/
-@import "./utils/alignment"
 
