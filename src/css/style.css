@@ -139,11 +139,12 @@
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
+/* ------------------------------- progressbar ------------------------------ */
 /*------------------------------------*\
     #TYPOGRAPHY
 \*------------------------------------*/
 /*------------------------------------*\
-    #COMPONENTS
+    #UTILITIES
 \*------------------------------------*/
 /*------------------------------------*\
     #BUTTONS
@@ -184,95 +185,79 @@
 .formsflow-btn-primary {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-primary, #1b34fb); }
-
-.formsflow-btn-primary:hover {
-  background-color: var(--formsflow-dark-primary, #102094); }
-
-.formsflow-btn-primary:focus {
-  border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
+  .formsflow-btn-primary:hover {
+    background-color: var(--formsflow-dark-primary, #102094); }
+  .formsflow-btn-primary:focus {
+    border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
 
 .formsflow-btn-primary-outline {
   color: var(--formsflow-primary, #1b34fb);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
-
-.formsflow-btn-primary-outline:hover {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-dark-primary, #102094); }
-
-.formsflow-btn-primary-outline:focus {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-primary, #1b34fb); }
+  .formsflow-btn-primary-outline:hover {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-dark-primary, #102094); }
+  .formsflow-btn-primary-outline:focus {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-primary, #1b34fb); }
 
 /* ---------------------------- secondary button ---------------------------- */
 .formsflow-btn-secondary {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
-
-.formsflow-btn-secondary:hover {
-  background-color: var(--formsflow-secondary, #ced7e0); }
-
-.formsflow-btn-secondary:focus {
-  border: 2px solid var(--formsflow-secondary, #ced7e0); }
+  .formsflow-btn-secondary:hover {
+    background-color: var(--formsflow-secondary, #ced7e0); }
+  .formsflow-btn-secondary:focus {
+    border: 2px solid var(--formsflow-secondary, #ced7e0); }
 
 .formsflow-btn-secondary-outline {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-secondary, #ced7e0); }
-
-.formsflow-btn-secondary-outline:hover {
-  background-color: var(--formsflow-secondary, #ced7e0); }
-
-.formsflow-btn-secondary-outline:focus {
-  background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
+  .formsflow-btn-secondary-outline:hover {
+    background-color: var(--formsflow-secondary, #ced7e0); }
+  .formsflow-btn-secondary-outline:focus {
+    background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
 
 /* ------------------------------ succes button ----------------------------- */
 .formsflow-btn-success {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-success, #157f1f); }
-
-.formsflow-btn-success:hover {
-  background-color: var(--formsflow-dark-success, #0b4010); }
-
-.formsflow-btn-success:focus {
-  border: 2px solid var(--formsflow-dark-success, #0b4010); }
+  .formsflow-btn-success:hover {
+    background-color: var(--formsflow-dark-success, #0b4010); }
+  .formsflow-btn-success:focus {
+    border: 2px solid var(--formsflow-dark-success, #0b4010); }
 
 .formsflow-btn-success-outline {
   color: var(--formsflow-success, #157f1f);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-light-success, #cde8d0); }
-
-.formsflow-btn-success-outline:hover {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-dark-success, #0b4010); }
-
-.formsflow-btn-success-outline:focus {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-success, #157f1f); }
+  .formsflow-btn-success-outline:hover {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-dark-success, #0b4010); }
+  .formsflow-btn-success-outline:focus {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-success, #157f1f); }
 
 /* ------------------------------ danger button ----------------------------- */
 .formsflow-btn-danger {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-danger, #c70f0f); }
-
-.formsflow-btn-danger:hover {
-  background-color: var(--formsflow-dark-danger, #8c0b0b); }
-
-.formsflow-btn-danger:focus {
-  border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
+  .formsflow-btn-danger:hover {
+    background-color: var(--formsflow-dark-danger, #8c0b0b); }
+  .formsflow-btn-danger:focus {
+    border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
 
 .formsflow-btn-danger-outline {
   color: var(--formsflow-danger, #c70f0f);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
-
-.formsflow-btn-danger-outline:hover {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-dark-danger, #8c0b0b); }
-
-.formsflow-btn-danger-outline:focus {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-danger, #c70f0f); }
+  .formsflow-btn-danger-outline:hover {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-dark-danger, #8c0b0b); }
+  .formsflow-btn-danger-outline:focus {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-danger, #c70f0f); }
 
 /* ------------------------------ white button ------------------------------ */
 .formsflow-btn-white {
@@ -329,6 +314,47 @@
 .formsflow-tab button:focus {
   border-bottom: 2px solid var(--formsflow-primary, #1b34fb); }
 
+.formsflow-progressbar-container {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  background-color: var(--formsflow-medium-secondary, #b4b4b4); }
+  .formsflow-progressbar-container > span {
+    font-weight: 500; }
+  .formsflow-progressbar-container .formsflow-progressbar {
+    height: 100%;
+    overflow: hidden;
+    transform: translateZ(0); }
+  .formsflow-progressbar-container .formsflow-progressbar > div {
+    position: relative;
+    height: 100%;
+    transition: width .2s linear; }
+
+.formsflow-progressbar-count {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform .2s linear; }
+  .formsflow-progressbar-count:after {
+    content: attr(aria-valuenow);
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+    transform: translate(-50%, -100%);
+    font-size: 0.85rem;
+    font-weight: 400; }
+
+.formsflow-progressbar-standard .formsflow-progressbar > div {
+  background-color: var(--formsflow-bg-black, #131313); }
+
+.formsflow-progressbar-standard .formsflow-progressbar-count::after {
+  color: var(--formsflow-bg-black, #131313); }
+
+.formsflow-progressbar-standard > span {
+  color: var(--formsflow-bg-black, #131313); }
+
+.formsflow-progressbar-success .formsflow-progressbar > div {
+  background-color: var(--formsflow-success, #157f1f); }
 .formsflow-tab .active {
   border-bottom: 2px solid var(--formsflow-primary, #1b34fb); }
 
@@ -436,17 +462,26 @@
 .formsflow-d-flex {
   display: flex; }
 
-.formsflow-justify-content-between {
-  justify-content: space-between; }
+.formsflow-progressbar-success .formsflow-progressbar-count::after {
+  color: var(--formsflow-success, #157f1f); }
 
-.formsflow-justify-content-evenly {
-  justify-content: space-evenly; }
+.formsflow-progressbar-success > span {
+  color: var(--formsflow-success, #157f1f); }
 
-.formsflow-justify-content-around {
-  justify-content: space-around; }
+.formsflow-progressbar-warning .formsflow-progressbar > div {
+  background-color: var(--formsflow-warning, #fcba19); }
 
-.formsflow-justify-content-start {
-  justify-content: start; }
+.formsflow-progressbar-warning .formsflow-progressbar-count::after {
+  color: var(--formsflow-warning, #fcba19); }
 
-.formsflow-child-m-3 > * {
-  margin-right: 1rem; }
+.formsflow-progressbar-warning > span {
+  color: var(--formsflow-warning, #fcba19); }
+
+.formsflow-progressbar-danger .formsflow-progressbar > div {
+  background-color: var(--formsflow-danger, #c70f0f); }
+
+.formsflow-progressbar-danger .formsflow-progressbar-count::after {
+  color: var(--formsflow-danger, #c70f0f); }
+
+.formsflow-progressbar-danger > span {
+  color: var(--formsflow-danger, #c70f0f); }
