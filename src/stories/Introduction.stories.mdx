@@ -8,7 +8,12 @@ import Plugin from './assets/plugin.svg';
 import Repo from './assets/repo.svg';
 import StackAlt from './assets/stackalt.svg';
 
-<Meta title="DESIGN SYSTEM" />
+<Meta title="DESIGN SYSTEM" parameters={{
+    viewMode: 'docs',
+    previewTabs: { 
+      canvas: { hidden: true } 
+     },
+  }}/>
 
 <style>
   {`
@@ -119,7 +124,20 @@ import StackAlt from './assets/stackalt.svg';
 [TODO]
 
 ## Logo
-[TODO]
+Logo is a symbol that identifies a business.
+
+<div class="formsflow-d-flex"> 
+  <a href="" class="formsflow-logo">
+  <img src="https://149641023.v2.pressablecdn.com/wp-content/uploads/2022/05/Site_logo.png"/>
+</a>
+
+<a href="" class="formsflow-logo">
+  <img src="https://app2.aot-technologies.com/logo.svg"/>
+  <span>logowithtext</span>
+</a>
+</div>
+ 
+
 
 ## Colours
 [TODO]
@@ -130,59 +148,24 @@ import StackAlt from './assets/stackalt.svg';
 ## Button
 Buttons allow users to take action in a certain way.
 
-<button class="formsflow-btn formsflow-btn-primary">Primary</button>
-<div className="subheading">Usage</div>    
+<div class="formsflow-d-flex formsflow-child-m-3">
+  <button class="formsflow-btn formsflow-btn-primary">Primary</button>  
+  <button class="formsflow-btn formsflow-btn-secondary">Secondary</button>  
+  <button class="formsflow-btn formsflow-btn-success">Success</button>  
+  <button class="formsflow-btn formsflow-btn-danger">Danger</button> 
+  <button class="formsflow-btn formsflow-btn-white">White</button> 
+</div>  
 
-  ```html dark
-    
-    <button class="formsflow-btn formsflow-btn-primary">Primary</button>
+## Outlined Button
+  Buttons allow users to take action in a certain way.
+  <div class="formsflow-d-flex formsflow-child-m-3">
+  <button class="formsflow-btn formsflow-btn-primary-outline">Primary</button>  
+  <button class="formsflow-btn formsflow-btn-secondary-outline">Secondary</button>  
+  <button class="formsflow-btn formsflow-btn-success-outline">Success</button>  
+  <button class="formsflow-btn formsflow-btn-danger-outline">Danger</button> 
+  <button class="formsflow-btn formsflow-btn-white-outline">White</button> 
+ </div> 
 
-  ```
-
-<button class="formsflow-btn formsflow-btn-md formsflow-btn-secondary">Secondary</button>
-<div className="subheading">Usage</div>    
-
-  ```html dark
-    
-    <button class="formsflow-btn formsflow-btn-md formsflow-btn-secondary">Secondary</button>
-
-  ```
-
-<button class="formsflow-btn formsflow-btn-danger">Danger</button>
-<div className="subheading">Usage</div>    
-
-  ```html dark
-    
-    <button class="formsflow-btn formsflow-btn-danger">Danger</button>
-
-  ```
-  
-<button class="formsflow-btn formsflow-btn-md formsflow-btn-primary-outline">Primary Outline</button>
-<div className="subheading">Usage</div>
-
-  ```html dark
-    
-    <button class="formsflow-btn formsflow-btn-md formsflow-btn-primary-outline">Primary Outline</button>
-
-  ```
-
-<button class="formsflow-btn formsflow-btn-md formsflow-btn-secondary-outline">Secondary Outline</button>
-<div className="subheading">Usage</div>
-
-  ```html dark
-    
-    <button class="formsflow-btn formsflow-btn-md formsflow-btn-secondary-outline">Secondary Outline</button>
-
-  ```
-
-<button class="formsflow-btn formsflow-btn-md formsflow-btn-danger-outline">Danger Outline</button>
-<div className="subheading">Usage</div>
-
-  ```html dark
-    
-    <button class="formsflow-btn formsflow-btn-md formsflow-btn-danger-outline">Danger Outline</button>
-
-  ```
 
 ## Forms
 [TODO]
@@ -206,34 +189,18 @@ number of tabs and much more limitations of content within the headings. Conside
   <button>Tab label</button>
   <button>Tab label</button>
 </div>
-
-<div className="subheading">Usage</div>
-  
-
-  ```html dark
-    <div class="formsflow-tab">
-        <button>Tab label</button>
-        <button>Tab label</button>
-        <button>Tab label</button>
-    </div>
-  ```
-### Button tabs  
 <br/>
+
+### Button tab
+ <br/><br/>
 <div class="formsflow-tab-button">
   <button>Button tab</button>
   <button>Button tab</button>
   <button>Button tab</button>
 </div>
 
-<div className="subheading">Usage</div>
+ 
 
-  ```html dark
-    <div class="formsflow-tab-button">
-      <button>Button tab</button>
-      <button>Button tab</button>
-      <button>Button tab</button>
-    </div>
-  ```
 ## Steps
 A step shows the completion status of an activity in a series of activities.
 
@@ -266,35 +233,7 @@ A step shows the completion status of an activity in a series of activities.
   </div>
 </div>
 
-<div className="subheading">Usage</div>
-
-  ```html dark
-    <div class="formsflow-steps">
-    <div class="step active">
-        <span>1</span>
-        <div>
-            <div class="title">STEP TITLE</div>
-            <div>Step description</div>
-        </div>
-    </div>
-
-    <div class="step">
-        <span>2</span>
-        <div>
-            <div class="title">STEP TITLE</div>
-            <div>Step description</div>
-        </div>
-    </div>
-
-    <div class="step">
-        <span>3</span>
-        <div>
-            <div class="title">STEP TITLE</div>
-            <div>Step description</div>
-        </div>
-    </div>
-</div>
-  ```
+ 
 
 ## Expanders
 
@@ -304,9 +243,66 @@ A step shows the completion status of an activity in a series of activities.
 [TODO]
 
 ## Progress Indicators
-[TODO]
+progress bar indicates that the user's request has been received and the application is making progress toward completing the requested action.
+<p>Given below different types of progress bar and you can customize the progress bar  based on your requirements</p>
+ <br/>
+<div class="formsflow-progressbar-container formsflow-progressbar-standard" style={{height:"2px"}} >
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
+     <div class="formsflow-progressbar">
+        <div style={{"width":"90%"}}></div>
+    </div>
+    <span>Uploading Files</span>
+</div>
+ 
+ <br/>
+ <br/>
+ <br/>
 
+
+ 
+
+<div class="formsflow-progressbar-container formsflow-progressbar-success" style={{height:"10px"}}>
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
+     <div class="formsflow-progressbar">
+       <div  style={{"width":"90%"}}></div>
+    </div>
+    <span>Success Message</span>
+</div>
+ <br/>
+ <br/>
+ <br/>
+
+
+ 
+  
+ 
+<div class="formsflow-progressbar-container formsflow-progressbar-warning"   >
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
+     <div class="formsflow-progressbar">
+       <div  style={{"width":"90%"}}></div>
+    </div>
+      <span>Warning Message</span>
+</div>
+
+ <br/>
+ <br/>
+ <br/>
+ 
+<div class="formsflow-progressbar-container formsflow-progressbar-danger"  >
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
+     <div class="formsflow-progressbar">
+       <div style={{"width":"90%"}}></div>
+    </div>
+      <span>Danger Message</span>
+</div>
+<br/>
+
+ 
+
+ 
+ 
 ## Tool tips
+
 [TODO]
 
 ## Cards

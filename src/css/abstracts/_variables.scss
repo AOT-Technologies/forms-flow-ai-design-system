@@ -85,7 +85,7 @@ $color-text-white:var(--formsflow-text-white,#ffff);
 $color-bg-black:var(--formsflow-bg-black,#131313);
 $color-text-black:var(--formsflow-text-black,#131313);
   
-
+$color-logo-text:var(--formsflow-logo-text,#131313);
  
 
 
@@ -113,6 +113,13 @@ $font-size-med-2: 1.2rem;
 $font-size-large: 2rem;
 $font-size-xl: 3rem;
 $font-size-xxl: 4rem;
+$font-size-logo: 2.1rem;
+
+/**
+ * Font Weight
+ */
+
+ $font-weight-logo: 700;
 
 /**
  * Line Height

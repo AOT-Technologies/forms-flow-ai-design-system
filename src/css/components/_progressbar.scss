@@ -1,0 +1,72 @@
+.formsflow-progressbar-container {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  background-color: $color-progress-bg;
+  > span{
+    font-weight: 500;
+  }
+
+  .formsflow-progressbar {
+    height: 100%;
+    overflow: hidden;
+    transform: translateZ(0);
+  }
+
+  .formsflow-progressbar>div {
+    position: relative;
+    height: 100%;
+    transition: width .2s linear;
+  }
+
+
+}
+
+.formsflow-progressbar-count {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform .2s linear;
+
+  &:after {
+    content: attr(aria-valuenow);
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+    transform: translate(-50%, -100%);
+    font-size: $font-size-sm-2;
+    font-weight: 400;
+  }
+  
+}
+
+
+@mixin setcolor ($bgcolor) {
+  .formsflow-progressbar>div {
+    background-color: $bgcolor;
+  }
+ 
+  .formsflow-progressbar-count::after {
+    color: $bgcolor;
+  }
+  > span {
+    color: $bgcolor;
+  }
+   
+}
+
+.formsflow-progressbar-standard {
+  @include setcolor($color-progress-standard)
+}
+
+.formsflow-progressbar-success {
+  @include setcolor($color-progress-success)
+}
+
+.formsflow-progressbar-warning {
+  @include setcolor($color-progress-warning)
+}
+
+.formsflow-progressbar-danger {
+  @include setcolor($color-progress-danger)
+}
