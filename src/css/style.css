@@ -142,9 +142,46 @@
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
+/* ------------------------------- progressbar ------------------------------ */
 /*------------------------------------*\
     #TYPOGRAPHY
 \*------------------------------------*/
+/*------------------------------------*\
+    #UTILITIES
+\*------------------------------------*/
+.formsflow-d-flex {
+  display: flex; }
+
+.formsflow-justify-content-between {
+  justify-content: space-between; }
+
+.formsflow-justify-content-evenly {
+  justify-content: space-evenly; }
+
+.formsflow-justify-content-around {
+  justify-content: space-around; }
+
+.formsflow-justify-content-start {
+  justify-content: start; }
+
+.formsflow-child-m-3 > * {
+  margin-right: 1rem; }
+
+.formsflow-text-primary {
+  color: var(--formsflow-primary, #1b34fb); }
+
+.formsflow-text-secondary {
+  color: var(--formsflow-secondary, #ced7e0); }
+
+.formsflow-text-success {
+  color: var(--formsflow-success, #157f1f); }
+
+.formsflow-text-warning {
+  color: var(--formsflow-warning, #fcba19); }
+
+.formsflow-text-danger {
+  color: var(--formsflow-danger, #c70f0f); }
+
 /*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
@@ -187,117 +224,97 @@
 .formsflow-btn-primary {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-primary, #1b34fb); }
-
-.formsflow-btn-primary:hover {
-  background-color: var(--formsflow-dark-primary, #102094); }
-
-.formsflow-btn-primary:focus {
-  border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
+  .formsflow-btn-primary:hover {
+    background-color: var(--formsflow-dark-primary, #102094); }
+  .formsflow-btn-primary:focus {
+    border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
 
 .formsflow-btn-primary-outline {
   color: var(--formsflow-primary, #1b34fb);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-lightest-Primary, #e8eafe); }
-
-.formsflow-btn-primary-outline:hover {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-dark-primary, #102094); }
-
-.formsflow-btn-primary-outline:focus {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-primary, #1b34fb); }
+  .formsflow-btn-primary-outline:hover {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-dark-primary, #102094); }
+  .formsflow-btn-primary-outline:focus {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-primary, #1b34fb); }
 
 /* ---------------------------- secondary button ---------------------------- */
 .formsflow-btn-secondary {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
-
-.formsflow-btn-secondary:hover {
-  background-color: var(--formsflow-secondary, #ced7e0); }
-
-.formsflow-btn-secondary:focus {
-  border: 2px solid var(--formsflow-secondary, #ced7e0); }
+  .formsflow-btn-secondary:hover {
+    background-color: var(--formsflow-secondary, #ced7e0); }
+  .formsflow-btn-secondary:focus {
+    border: 2px solid var(--formsflow-secondary, #ced7e0); }
 
 .formsflow-btn-secondary-outline {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-secondary, #ced7e0); }
-
-.formsflow-btn-secondary-outline:hover {
-  background-color: var(--formsflow-secondary, #ced7e0); }
-
-.formsflow-btn-secondary-outline:focus {
-  background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
+  .formsflow-btn-secondary-outline:hover {
+    background-color: var(--formsflow-secondary, #ced7e0); }
+  .formsflow-btn-secondary-outline:focus {
+    background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
 
 /* ------------------------------ succes button ----------------------------- */
 .formsflow-btn-success {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-success, #157f1f); }
-
-.formsflow-btn-success:hover {
-  background-color: var(--formsflow-dark-success, #0b4010); }
-
-.formsflow-btn-success:focus {
-  border: 2px solid var(--formsflow-dark-success, #0b4010); }
+  .formsflow-btn-success:hover {
+    background-color: var(--formsflow-dark-success, #0b4010); }
+  .formsflow-btn-success:focus {
+    border: 2px solid var(--formsflow-dark-success, #0b4010); }
 
 .formsflow-btn-success-outline {
   color: var(--formsflow-success, #157f1f);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-light-success, #cde8d0); }
-
-.formsflow-btn-success-outline:hover {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-dark-success, #0b4010); }
-
-.formsflow-btn-success-outline:focus {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-success, #157f1f); }
+  .formsflow-btn-success-outline:hover {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-dark-success, #0b4010); }
+  .formsflow-btn-success-outline:focus {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-success, #157f1f); }
 
 /* ------------------------------ danger button ----------------------------- */
 .formsflow-btn-danger {
   color: var(--formsflow-text-white, #ffff);
   background-color: var(--formsflow-danger, #c70f0f); }
-
-.formsflow-btn-danger:hover {
-  background-color: var(--formsflow-dark-danger, #8c0b0b); }
-
-.formsflow-btn-danger:focus {
-  border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
+  .formsflow-btn-danger:hover {
+    background-color: var(--formsflow-dark-danger, #8c0b0b); }
+  .formsflow-btn-danger:focus {
+    border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
 
 .formsflow-btn-danger-outline {
   color: var(--formsflow-danger, #c70f0f);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-light-danger, #f7dbdb); }
-
-.formsflow-btn-danger-outline:hover {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-dark-danger, #8c0b0b); }
-
-.formsflow-btn-danger-outline:focus {
-  color: var(--formsflow-text-white, #ffff);
-  background-color: var(--formsflow-danger, #c70f0f); }
+  .formsflow-btn-danger-outline:hover {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-dark-danger, #8c0b0b); }
+  .formsflow-btn-danger-outline:focus {
+    color: var(--formsflow-text-white, #ffff);
+    background-color: var(--formsflow-danger, #c70f0f); }
 
 /* ------------------------------ white button ------------------------------ */
 .formsflow-btn-white {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-bg-white, #ffff); }
-
-.formsflow-btn-white:hover {
-  background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
-
-.formsflow-btn-white:focus {
-  border: 2px solid var(--formsflow-lightest-secondary, #f2f2f2); }
+  .formsflow-btn-white:hover {
+    background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
+  .formsflow-btn-white:focus {
+    border: 2px solid var(--formsflow-lightest-secondary, #f2f2f2); }
 
 .formsflow-btn-white-outline {
   color: var(--formsflow-text-black, #131313);
   background-color: var(--formsflow-bg-white, #ffff);
   border: 2px solid var(--formsflow-lightest-secondary, #f2f2f2); }
-
-.formsflow-btn-white-outline:hover {
-  background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
-
-.formsflow-btn-white-outline:focus {
-  background-color: var(--formsflow-bg-white, #ffff); }
+  .formsflow-btn-white-outline:hover {
+    background-color: var(--formsflow-lightest-secondary, #f2f2f2); }
+  .formsflow-btn-white-outline:focus {
+    background-color: var(--formsflow-bg-white, #ffff); }
 
 /* Style for standard tab start */
 .formsflow-tab {
@@ -364,10 +381,9 @@
 .formsflow-tab-button .active {
   background-color: var(--formsflow-primary, #1b34fb);
   color: var(--formsflow-text-white, #ffff); }
-
-.formsflow-tab-button .active:hover {
-  background-color: var(--formsflow-primary, #1b34fb);
-  color: var(--formsflow-text-white, #ffff); }
+  .formsflow-tab-button .active:hover {
+    background-color: var(--formsflow-primary, #1b34fb);
+    color: var(--formsflow-text-white, #ffff); }
 
 /* Styles for button tabs end */
 /* Style the logo */
@@ -375,15 +391,79 @@
   display: flex;
   align-items: center;
   padding: 0.375rem; }
+  .formsflow-logo span {
+    font-weight: 700;
+    margin-left: 4px;
+    font-size: 2.1rem;
+    color: var(--formsflow-logo-text, #131313) !important; }
+  .formsflow-logo img {
+    max-height: 2.5rem; }
 
-.formsflow-logo span {
-  font-weight: 700;
-  margin-left: 4px;
-  font-size: 2.1rem;
-  color: var(--formsflow-logo-text, #131313) !important; }
+.formsflow-progressbar-container {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  background-color: var(--formsflow-medium-secondary, #b4b4b4); }
+  .formsflow-progressbar-container > span {
+    font-weight: 500; }
+  .formsflow-progressbar-container .formsflow-progressbar {
+    height: 100%;
+    overflow: hidden;
+    transform: translateZ(0); }
+  .formsflow-progressbar-container .formsflow-progressbar > div {
+    position: relative;
+    height: 100%;
+    transition: width .2s linear; }
 
-.formsflow-logo img {
-  max-height: 2.5rem; }
+.formsflow-progressbar-count {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform .2s linear; }
+  .formsflow-progressbar-count:after {
+    content: attr(aria-valuenow);
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+    transform: translate(-50%, -100%);
+    font-size: 0.85rem;
+    font-weight: 400; }
+
+.formsflow-progressbar-standard .formsflow-progressbar > div {
+  background-color: var(--formsflow-bg-black, #131313); }
+
+.formsflow-progressbar-standard .formsflow-progressbar-count::after {
+  color: var(--formsflow-bg-black, #131313); }
+
+.formsflow-progressbar-standard > span {
+  color: var(--formsflow-bg-black, #131313); }
+
+.formsflow-progressbar-success .formsflow-progressbar > div {
+  background-color: var(--formsflow-success, #157f1f); }
+
+.formsflow-progressbar-success .formsflow-progressbar-count::after {
+  color: var(--formsflow-success, #157f1f); }
+
+.formsflow-progressbar-success > span {
+  color: var(--formsflow-success, #157f1f); }
+
+.formsflow-progressbar-warning .formsflow-progressbar > div {
+  background-color: var(--formsflow-warning, #fcba19); }
+
+.formsflow-progressbar-warning .formsflow-progressbar-count::after {
+  color: var(--formsflow-warning, #fcba19); }
+
+.formsflow-progressbar-warning > span {
+  color: var(--formsflow-warning, #fcba19); }
+
+.formsflow-progressbar-danger .formsflow-progressbar > div {
+  background-color: var(--formsflow-danger, #c70f0f); }
+
+.formsflow-progressbar-danger .formsflow-progressbar-count::after {
+  color: var(--formsflow-danger, #c70f0f); }
+
+.formsflow-progressbar-danger > span {
+  color: var(--formsflow-danger, #c70f0f); }
 
 /* Styles for step tabs start */
 .formsflow-steps {
@@ -397,23 +477,18 @@
   min-height: 6rem;
   border: 1px solid var(--formsflow-light-secondary, #e6e6e6);
   background-color: var(--formsflow-bg-white, #ffff); }
-
-.formsflow-steps .step:hover {
-  background-color: var(--formsflow-light-secondary, #e6e6e6); }
-
-.formsflow-steps .step:focus-visible:not(:active) {
-  background-color: var(--formsflow-light-secondary, #e6e6e6);
-  outline: none; }
-
-.formsflow-steps .step:focus-visible:not(:active) span {
-  background-color: var(--formsflow-bg-black, #131313); }
-
-.formsflow-steps .step:focus {
-  background-color: var(--formsflow-light-success, #cde8d0);
-  outline: none; }
-
-.formsflow-steps .step:focus span {
-  background-color: var(--formsflow-success, #157f1f); }
+  .formsflow-steps .step:hover {
+    background-color: var(--formsflow-light-secondary, #e6e6e6); }
+  .formsflow-steps .step:focus-visible:not(:active) {
+    background-color: var(--formsflow-light-secondary, #e6e6e6);
+    outline: none; }
+    .formsflow-steps .step:focus-visible:not(:active) span {
+      background-color: var(--formsflow-bg-black, #131313); }
+  .formsflow-steps .step:focus {
+    background-color: var(--formsflow-light-success, #cde8d0);
+    outline: none; }
+    .formsflow-steps .step:focus span {
+      background-color: var(--formsflow-success, #157f1f); }
 
 .formsflow-steps .step span {
   background-color: var(--formsflow-bg-black, #131313);
@@ -436,35 +511,12 @@
 .formsflow-steps .active {
   background-color: var(--formsflow-light-success, #cde8d0);
   outline: none; }
-
-.formsflow-steps .active span {
-  background-color: var(--formsflow-success, #157f1f); }
-
-.formsflow-steps .active:hover {
-  background-color: var(--formsflow-light-success, #cde8d0);
-  outline: none; }
-
-.formsflow-steps .active:hover span {
-  background-color: var(--formsflow-success, #157f1f); }
+  .formsflow-steps .active span {
+    background-color: var(--formsflow-success, #157f1f); }
+  .formsflow-steps .active:hover {
+    background-color: var(--formsflow-light-success, #cde8d0);
+    outline: none; }
+    .formsflow-steps .active:hover span {
+      background-color: var(--formsflow-success, #157f1f); }
 
 /* Styles for step tabs end */
-/*------------------------------------*\
-    #UTILITIES
-\*------------------------------------*/
-.formsflow-d-flex {
-  display: flex; }
-
-.formsflow-justify-content-between {
-  justify-content: space-between; }
-
-.formsflow-justify-content-evenly {
-  justify-content: space-evenly; }
-
-.formsflow-justify-content-around {
-  justify-content: space-around; }
-
-.formsflow-justify-content-start {
-  justify-content: start; }
-
-.formsflow-child-m-3 > * {
-  margin-right: 1rem; }

@@ -1,9 +1,110 @@
-import { Meta } from '@storybook/addon-docs';
+import { Meta } from "@storybook/addon-docs";
+
+<Meta
+  title="Components/Progressbar"
+  parameters={{
+    viewMode: "docs",
+    previewTabs: {
+      canvas: { hidden: true },
+    },
+  }}
+/>
 
 
-<Meta title="Components/Progressbar" parameters={{
-    viewMode: 'docs',
-    previewTabs: { 
-      canvas: { hidden: true } 
-     },
-  }} />
+ 
+## Progressbar    Standard
+ <p>Different types of progress bar and you can customize the progress bar using following steps</p>
+ <ul>
+ <li>change the "aria-valuenow" attribute with actual value to show the percentage of the progress</li>
+ <li>change the "left" attribute of "formsflow-progressbar-count"  as per your requirements </li>
+ <li>change the "width" attribute  "formsflow-progressbar"  as per your requirements to increse the length of progress bar </li>
+ <li>change the "height" attribute of "formsflow-progressbar-container" to increase the height of the progress bar </li>
+ </ul>
+ <br/>
+<div class="formsflow-progressbar-container formsflow-progressbar-standard" style={{height:"2px"}} >
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
+     <div class="formsflow-progressbar">
+        <div style={{"width":"90%"}}></div>
+    </div>
+    <span>Uploading Files</span>
+</div>
+<br/>
+
+```html dark
+<div class="formsflow-progressbar-container formsflow-progressbar-standard" style="height:2px" >
+  <div class="formsflow-progressbar-count" aria-valuenow="90%" style="left:90%"></div>
+  <div class="formsflow-progressbar"><div style="width:90%"></div></div>
+  <span>Uploading Files</span>
+</div>
+
+```
+<br/>
+
+## Progressbar  Success
+
+<br/>
+<div class="formsflow-progressbar-container formsflow-progressbar-success" style={{height:"2px"}}>
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
+     <div class="formsflow-progressbar">
+       <div style={{"width":"90%"}}></div>
+    </div>
+    <span>Success Message</span>
+</div>
+<br/>
+
+```html dark
+<div class="formsflow-progressbar-container formsflow-progressbar-success" style="height:2px">
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style="left:90%"></div>
+    <div class="formsflow-progressbar"><div  style="width:90%"></div></div>
+    <span>Success Message</span>
+</div>
+
+```
+<br/>
+
+## Progressbar  Warning
+
+<br/>
+<div class="formsflow-progressbar-container formsflow-progressbar-warning"  style={{height:"2px"}} >
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
+     <div class="formsflow-progressbar">
+       <div  style={{"width":"90%"}}></div>
+    </div>
+      <span>Warning Message</span>
+</div>
+<br/>
+
+```html dark
+<div class="formsflow-progressbar-container formsflow-progressbar-warning"  style="height:2px">
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style="left:90%"></div>
+     <div class="formsflow-progressbar"><div style="width:90%"></div></div>
+    <span>Warning Message</span>
+</div>
+
+```
+<br/>
+
+## Progressbar  Danger
+
+<br/>
+<div class="formsflow-progressbar-container formsflow-progressbar-danger" style={{height:"2px"}}>
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style={{"left":"90%"}}></div>
+     <div class="formsflow-progressbar">
+       <div style={{"width":"90%"}}></div>
+    </div>
+      <span>Danger Message</span>
+</div>
+<br/>
+
+
+```html dark
+<div class="formsflow-progressbar-container formsflow-progressbar-danger" style="height:2px">
+    <div class="formsflow-progressbar-count" aria-valuenow="90%" style="left:90%"></div>
+     <div class="formsflow-progressbar"><div style="width:90%"></div></div>
+    <span>Danger Message</span>
+</div>
+
+```
+
+
+
