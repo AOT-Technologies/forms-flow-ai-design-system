@@ -1,4 +1,4 @@
 node_modules
 /dist
 /storybook-static
-/src/css/style.css
+src/css/style.css
