@@ -6,29 +6,16 @@
    
 .formsflow-steps .step {
     display: flex;
+    position: relative;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
     min-height: 6rem;
     border: 1px solid $color-light-secondary;
     background-color: $color-bg-white;
-    &:hover{
+}
+.formsflow-steps .active + .step:not(.active) {
     background-color: $color-light-secondary;
-    }
-    &:focus-visible:not(:active){
-    background-color: $color-light-secondary;
-    outline: none;
-    span{
-        background-color: $color-bg-black;
-    }
-    }
-    &:focus{
-    background-color: $color-light-success;
-    outline: none;
-    span{
-        background-color: $color-neutral-success;
-    }
-    }
 }
 
 .formsflow-steps .step span{
@@ -57,13 +44,46 @@
     span{
     background-color: $color-neutral-success;
     }
-    &:hover{
-    background-color: $color-light-success;
-    outline: none;
-    span{
-    background-color: $color-neutral-success;
-    }
-    }
 }
-   
+
+.formsflow-steps .step:after, .formsflow-steps .step:before {
+	left: 100%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+    z-index: 1;
+}
+
+.formsflow-steps .step:not(:last-child):after {
+	border-color: transparent;
+	border-left-color: $color-bg-white;
+	border-width: 0.5rem;
+}
+
+
+.formsflow-steps .step:not(:last-child):before {
+	border-color: transparent;
+	border-left-color: inherit;
+	border-width: 0.625rem;
+}
+
+.formsflow-steps .active:not(:last-child):before {
+	border-color: transparent;
+	border-left-color: $color-light-success;
+	border-width: 0.625rem;
+}
+
+.formsflow-steps .active:not(:last-child):after {
+	border-color: transparent;
+	border-left-color: $color-light-success;
+	border-width: 0.5rem;
+}
+
+.formsflow-steps .active + .step:not(.active):not(:last-child):after {
+    border-left-color: $color-light-secondary;
+}
+
 /* Styles for step tabs end */
