@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently npm:watch:*",
-    "watch:storybook": "start-storybook -p 6006",
-    "storybook": "start-storybook -p 6006",
+    "dev": "concurrently npm:sass npm:watch:*",
     "watch:sass-dev": "node-sass --watch ./src/css -o ./src/css",
+    "watch:storybook": "start-storybook -p 6006",
+    "sass":"node-sass  ./src/css -o ./src/css",
+    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build-sass": "node-sass  ./src/css -o dist --output-style compressed"
   },
