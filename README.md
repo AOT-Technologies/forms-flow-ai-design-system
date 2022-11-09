@@ -5,8 +5,7 @@ A complete design system for formsflow.ai
 
 # Badges
 [![Storybook publish](https://github.com/AOT-Technologies/forms-flow-ai-design-system/actions/workflows/storybook.cd.yml/badge.svg)](https://github.com/AOT-Technologies/forms-flow-ai-design-system/actions/workflows/storybook.cd.yml)
-
-[![Accessibility check](https://github.com/AOT-Technologies/forms-flow-ai-design-system/actions/workflows/storybook.ci.yml/badge.svg)](https://github.com/AOT-Technologies/forms-flow-ai-design-system/actions/workflows/storybook.ci.yml)
+[![Storybook](https://github.com/AOT-Technologies/forms-flow-ai-design-system/actions/workflows/storybook.ci.yml/badge.svg)](https://github.com/AOT-Technologies/forms-flow-ai-design-system/actions/workflows/storybook.ci.yml)
 
 ## Installation
 
